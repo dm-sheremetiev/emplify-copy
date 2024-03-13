@@ -1,0 +1,63 @@
+@import '@/careers/styles/variables';
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/media-queries';
+
+.paragraph {
+  font-family: $fontFamilySecondary;
+  @include fontSize(16, 26);
+  font-weight: 400;
+}
+
+.paragraphLg {
+  @include fontSize(18, 30);
+}
+
+.paragraphSm {
+  @include fontSize(13, 20);
+}
+
+.paragraphXs {
+  @include fontSize(11, 18);
+}
+
+.heading {
+  @include fontSize(30, 42);
+  font-weight: 500;
+
+  @include md {
+    @include fontSize(42, 60);
+  }
+}
+
+.headingHero {
+  @include fontSize(28, 30);
+  font-weight: 600;
+
+  @include md {
+    @include fontSize(58, 58);
+  }
+}
+
+.headingSecondary {
+  @include fontSize(26, 38);
+
+  @include md {
+    @include fontSize(36, 52);
+  }
+}
+
+.headingTertiary {
+  @include fontSize(24, 34);
+
+  @include md {
+    @include fontSize(28, 40);
+  }
+}
+
+.headingQuaternary {
+  @include fontSize(20, 34);
+}
+
+.headingQuinary {
+  @include fontSize(16, 26);
+}

@@ -1,0 +1,64 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.shareIcons {
+  display: flex;
+  padding-top: 27px;
+
+  li {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include md {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  a {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.fb {
+  background-image: url('../../assets/social/facebook-icon.svg');
+}
+
+.ig {
+  background-image: url('../../assets/social/instagram-icon.svg');
+}
+
+.tw {
+  background-image: url('../../assets/social/twitter-icon.svg');
+}
+
+.yt {
+  background-image: url('../../assets/social/youtube-icon.svg');
+}
+
+.in {
+  background-image: url('../../assets/social/linkedin-icon.svg');
+}
+
+.visuallyHidden {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

@@ -1,0 +1,17 @@
+@import '../mixins';
+@import '../variables';
+@import '../media-queries';
+
+.global {
+  font-family: $fontFamilyPrimary;
+  color: $rhino100;
+  background-color: #fff;
+
+  p {
+    font-family: $fontFamilySecondary;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}

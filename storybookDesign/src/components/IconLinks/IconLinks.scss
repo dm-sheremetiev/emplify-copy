@@ -1,0 +1,55 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-icon-links {
+	background-color: $shipGray;
+
+	&__content {
+		max-width: $max-width-page;
+		margin: 0 auto;
+		padding: 45px;
+
+		@media (min-width: $mq-768) {
+			padding: 90px 45px;
+		}
+	}
+
+	&__title {
+		font-size: 24px;
+		color: $white;
+		margin-bottom: 25px;
+		text-align: center;
+		@media (min-width: $mq-768) {
+			font-size: 30px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+
+	&__link {
+		--link-color: #{$white};
+		display: block;
+		max-width: 150px;
+		padding: $spacing-xs * 0.5;
+		color: var(--link-color);
+
+		&:hover {
+			--link-color: #{$sail};
+		}
+		@media (min-width: $mq-768) {
+			padding: $spacing-xs;
+		}
+	}
+	&__icon {
+		height: 36px;
+		width: 36px;
+		@media (min-width: $mq-768) {
+			height: 100px;
+			width: 100px;
+		}
+	}
+}

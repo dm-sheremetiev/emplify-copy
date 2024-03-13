@@ -1,0 +1,53 @@
+@import '../variables';
+@import '../mixins';
+@import '../media-queries';
+
+.arrow {
+  display: inline-flex;
+  align-items: center;
+
+  &:after {
+    width: 0.2em;
+    height: 0.2em;
+    content: '';
+    display: inline-block;
+    border-style: none;
+    box-sizing: content-box;
+    border-top: 4px solid #63bceb;
+    border-right: 4px solid #63bceb;
+    transform: translate(0.3em, 0em) rotate(45deg);
+
+    @include md {
+      width: 0.2em;
+      height: 0.2em;
+      content: '';
+      display: inline-block;
+      border-top: 2px solid #63bceb;
+      border-right: 2px solid #63bceb;
+      transform: translate(0.3em, 0.1em) rotate(45deg);
+    }
+
+    @media (max-width: 1000px) {
+      border-top: 2px solid #63bceb;
+      border-right: 2px solid #63bceb;
+    }
+  }
+
+  &White {
+    @extend .arrow;
+
+    &:after {
+      border-color: #fff;
+
+      @media (max-width: 1000px) {
+        border-color: #fff;
+      }
+    }
+  }
+
+  &Center {
+    @extend .arrow;
+
+    justify-content: center;
+  }
+}

@@ -1,0 +1,25 @@
+@-webkit-keyframes slideUp {
+  from {
+    visibility: visible;
+    @include opacity(0);
+    @include transform(translate3d(0, 100%, 0));
+  }
+
+  to {
+    @include opacity(1);
+    @include transform(translate3d(0, 0, 0));
+  }
+}
+
+@keyframes slideUp {
+  from {
+    visibility: visible;
+    @include opacity(0);
+    @include transform(translate3d(0, 100%, 0));
+  }
+
+  to {
+    @include opacity(1);
+    @include transform(translate3d(0, 0, 0));
+  }
+}

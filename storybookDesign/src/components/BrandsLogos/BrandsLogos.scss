@@ -1,0 +1,115 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-brands-logos {
+	background-color: $white;
+	padding-top: 50px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-bottom: 35px;
+
+	&__container {
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	&__logos {
+		position: relative;
+		margin-bottom: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			content: "";
+			height: 100%;
+			width: 100%;
+			// background-image: linear-gradient(180deg, transparent, $white);
+			background: linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 0) 0%,
+				rgba(255, 255, 255, 0.4) 50%,
+				rgba(255, 255, 255, 1) 100%
+			);
+		}
+
+		.emplifi-brand-logo {
+			width: 50%;
+
+			&__image {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&__cards {
+	}
+
+	&__title {
+		.typography.typography--Headline2 {
+			color: $pictonBlue;
+			font-size: 24px;
+			line-height: 32px;
+			font-weight: 500;
+		}
+	}
+}
+
+.emplifi-brand-logo {
+	padding: 12.5px;
+
+	&__image {
+		width: 100%;
+		max-width: 148px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.emplifi-brands-logos {
+		padding-top: 92px;
+
+		&__container {
+		}
+
+		&__logos {
+			margin-top: 20px;
+			margin-bottom: 150px;
+
+			&::before {
+				background: linear-gradient(
+					180deg,
+					rgba(255, 255, 255, 0) 0%,
+					rgba(255, 255, 255, 0.5) 40%,
+					rgba(255, 255, 255, 1) 100%
+				);
+			}
+
+			.emplifi-brand-logo {
+				width: 25%;
+			}
+		}
+
+		&__cards {
+		}
+
+		&__title {
+			.typography.typography--Headline2 {
+				font-size: 36px;
+				line-height: 40px;
+				font-weight: 500;
+				text-align: center;
+			}
+		}
+	}
+
+	.emplifi-brand-logo {
+		padding: 25px;
+
+		&__image {
+			max-width: 300px;
+		}
+	}
+}

@@ -1,0 +1,444 @@
+{
+  "quarter": {
+    "y": 2022,
+    "q": 4
+  },
+  "missingReports": [
+    {
+      "region": "australia-new-zealand",
+      "industry": "media"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "media"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "media"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "accommodation"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "accommodation"
+    },
+    {
+      "region": "benelux",
+      "industry": "accommodation"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "accommodation"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "airlines"
+    },
+    {
+      "region": "brazil",
+      "industry": "airlines"
+    },
+    {
+      "region": "united-kingdom",
+      "industry": "airlines"
+    },
+    {
+      "region": "france",
+      "industry": "airlines"
+    },
+    {
+      "region": "dach",
+      "industry": "airlines"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "airlines"
+    },
+    {
+      "region": "benelux",
+      "industry": "airlines"
+    },
+    {
+      "region": "middle-east",
+      "industry": "airlines"
+    },
+    {
+      "region": "africa",
+      "industry": "airlines"
+    },
+    {
+      "region": "latin-america",
+      "industry": "airlines"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "airlines"
+    },
+    {
+      "region": "mexico",
+      "industry": "airlines"
+    },
+    {
+      "region": "north-america",
+      "industry": "airlines"
+    },
+    {
+      "region": "southern-europe",
+      "industry": "airlines"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "alcohol"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "alcohol"
+    },
+    {
+      "region": "benelux",
+      "industry": "alcohol"
+    },
+    {
+      "region": "middle-east",
+      "industry": "alcohol"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "alcohol"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "auto"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "auto"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "auto"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "beauty"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "beauty"
+    },
+    {
+      "region": "benelux",
+      "industry": "beauty"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "beauty"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "beverages"
+    },
+    {
+      "region": "france",
+      "industry": "beverages"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "beverages"
+    },
+    {
+      "region": "benelux",
+      "industry": "beverages"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "beverages"
+    },
+    {
+      "region": "mexico",
+      "industry": "beverages"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "ecommerce"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "ecommerce"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "ecommerce"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "electronics"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "electronics"
+    },
+    {
+      "region": "benelux",
+      "industry": "electronics"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "electronics"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "fashion"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "fashion"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "fashion"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "finance"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "finance"
+    },
+    {
+      "region": "benelux",
+      "industry": "finance"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "finance"
+    },
+    {
+      "region": "worldwide",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "brazil",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "united-kingdom",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "dach",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "france",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "benelux",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "africa",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "middle-east",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "asia-pacific",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "latin-america",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "mexico",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "north-america",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "retail"
+    },
+    {
+      "region": "southern-europe",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "retail"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "retail"
+    },
+    {
+      "region": "worldwide",
+      "industry": "retail-food"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "retail-food"
+    },
+    {
+      "region": "brazil",
+      "industry": "retail-food"
+    },
+    {
+      "region": "france",
+      "industry": "retail-food"
+    },
+    {
+      "region": "united-kingdom",
+      "industry": "retail-food"
+    },
+    {
+      "region": "dach",
+      "industry": "retail-food"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "retail-food"
+    },
+    {
+      "region": "middle-east",
+      "industry": "retail-food"
+    },
+    {
+      "region": "africa",
+      "industry": "retail-food"
+    },
+    {
+      "region": "asia-pacific",
+      "industry": "retail-food"
+    },
+    {
+      "region": "latin-america",
+      "industry": "retail-food"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "retail-food"
+    },
+    {
+      "region": "mexico",
+      "industry": "retail-food"
+    },
+    {
+      "region": "north-america",
+      "industry": "retail-food"
+    },
+    {
+      "region": "benelux",
+      "industry": "retail-food"
+    },
+    {
+      "region": "southern-europe",
+      "industry": "retail-food"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "telecom"
+    },
+    {
+      "region": "brazil",
+      "industry": "telecom"
+    },
+    {
+      "region": "united-kingdom",
+      "industry": "telecom"
+    },
+    {
+      "region": "france",
+      "industry": "telecom"
+    },
+    {
+      "region": "dach",
+      "industry": "telecom"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "telecom"
+    },
+    {
+      "region": "benelux",
+      "industry": "telecom"
+    },
+    {
+      "region": "mexico",
+      "industry": "telecom"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "telecom"
+    },
+    {
+      "region": "north-america",
+      "industry": "telecom"
+    },
+    {
+      "region": "southern-europe",
+      "industry": "telecom"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "travel"
+    },
+    {
+      "region": "brazil",
+      "industry": "travel"
+    },
+    {
+      "region": "france",
+      "industry": "travel"
+    },
+    {
+      "region": "dach",
+      "industry": "travel"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "travel"
+    },
+    {
+      "region": "benelux",
+      "industry": "travel"
+    },
+    {
+      "region": "africa",
+      "industry": "travel"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "travel"
+    },
+    {
+      "region": "mexico",
+      "industry": "travel"
+    },
+    {
+      "region": "southern-europe",
+      "industry": "travel"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-brand-block {
+	position: relative;
+	overflow: hidden;
+	img {
+		max-width: 100%;
+	}
+	.emplifi-brand-block {
+		&__content {
+			position: absolute;
+			top: 30px;
+			margin: 0 15% 0 15%;
+			max-height: 50%;
+			.typography.typography--BrandGuideH1,
+			p {
+				color: $chathamsBlue;
+				text-align: center;
+			}
+			.typography.typography--BrandGuideH1 {
+				font-size: 25px;
+				line-height: 30px;
+			}
+			p {
+				margin-top: 15px;
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		&__image {
+			&--desktop {
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 428px;
+			}
+			&--sub-desktop {
+				position: absolute;
+				display: block;
+				bottom: 0;
+				height: 50%;
+			}
+		}
+		&__cloud {
+			&--top {
+				top: -20px;
+				left: -63px;
+				border-top-right-radius: 22.5px;
+				border-bottom-right-radius: 22.5px;
+				position: absolute;
+				height: 40px;
+				width: 100px;
+				background-color: #63bceb;
+			}
+			&--bottom {
+				bottom: -20px;
+				right: -63px;
+				border-top-left-radius: 22.5px;
+				border-bottom-left-radius: 22.5px;
+				position: absolute;
+				height: 40px;
+				width: 100px;
+				background-color: $white;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 520px) {
+	.emplifi-brand-block {
+		.emplifi-brand-block {
+			&__image {
+				&--sub-desktop {
+					height: unset;
+					width: 55%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.emplifi-brand-block {
+		.emplifi-brand-block {
+			&__content {
+				position: absolute;
+				right: 0%;
+				top: 25%;
+				width: 300px;
+				margin: 0 5% 0 0;
+				.typography.typography--BrandGuideH1,
+				p {
+					color: $chathamsBlue;
+					text-align: left;
+				}
+				.typography.typography--BrandGuideH1 {
+					font-size: 36px;
+					line-height: 40px;
+				}
+				p {
+					margin-top: 25px;
+				}
+				.emplifi-brand-block__text-area {
+					max-height: 150px;
+				}
+			}
+			&__image {
+				&--desktop {
+					height: 100%;
+				}
+			}
+			&__cloud {
+				&--top {
+					width: 336px;
+					height: 123px;
+					top: -62px;
+					left: -216px;
+					border-top-right-radius: 31px;
+					border-bottom-right-radius: 31px;
+				}
+				&--bottom {
+					width: 336px;
+					height: 123px;
+					bottom: -62px;
+					right: -116px;
+					border-top-left-radius: 31px;
+					border-bottom-left-radius: 31px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.emplifi-brand-block {
+		.emplifi-brand-block {
+			&__content {
+				top: 35%;
+				width: 400px;
+			}
+			&__image {
+				&--sub-desktop {
+					width: 60%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.emplifi-brand-block {
+		.emplifi-brand-block {
+			&__content {
+				top: 45%;
+				max-width: 1280px;
+				width: unset;
+				left: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
+				.emplifi-brand-block__text-area {
+					margin: 0 5% 0 auto;
+					text-align: right;
+					width: 50%;
+					max-height: 200px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.emplifi-brand-block {
+		.emplifi-brand-block {
+			&__content {
+				top: 65%;
+			}
+			&__image {
+				&--sub-desktop {
+					width: 41%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	.emplifi-brand-block {
+		.emplifi-brand-block {
+			&__content {
+				top: 58%;
+				.typography.typography--BrandGuideH1 {
+					font-size: 50px;
+					line-height: 60px;
+				}
+				p {
+					font-size: 24px;
+					line-height: 31px;
+				}
+				.emplifi-brand-block__text-area {
+					width: 59%;
+					margin: 0 0 0 auto;
+				}
+			}
+			&__image {
+				&--sub-desktop {
+					width: 46%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1299px) {
+	.emplifi-brand-block {
+		.emplifi-brand-block {
+			&__content {
+				top: 50%;
+			}
+			&__image {
+				&--sub-desktop {
+					width: 55%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.emplifi-brand-block {
+		.emplifi-brand-block {
+			&__content {
+				top: 50%;
+				.typography.typography--BrandGuideH1 {
+					font-size: 54px;
+				}
+				p {
+					font-size: 24px;
+					line-height: 31px;
+				}
+				.emplifi-brand-block__text-area {
+					width: 60%;
+					max-height: 250px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.emplifi-brand-block {
+		.emplifi-brand-block {
+			&__image {
+				&--sub-desktop {
+					width: 50%;
+				}
+			}
+		}
+	}
+}

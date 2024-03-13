@@ -1,0 +1,76 @@
+$screen-xs-up: 480px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$mainNavDesktop: 1280px;
+$retina: 'only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)';
+
+@mixin xs {
+  @media (min-width: #{$screen-xs-up}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+// Custom devices
+// use wisely, pls.
+
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px') {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media #{$retina} {
+    @content;
+  }
+}
+
+@mixin mainNavDesktop {
+  @media (min-width: #{$mainNavDesktop}) {
+    @content;
+  }
+}
+
+/* usage
+.selector {
+  background-image: url(..your-normal-image)
+
+  @include md {
+    ...your code ...
+  }
+
+  @include rwd(800) {
+    ...your code ...
+  }
+
+  @include retina {
+    background-image: url(..retina-image@2x)
+  }
+}
+ */

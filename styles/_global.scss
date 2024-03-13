@@ -1,0 +1,27 @@
+.d-md-flex {
+  @media (min-width: 768px) {
+    display: flex !important;
+  }
+}
+
+.d-md-none {
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

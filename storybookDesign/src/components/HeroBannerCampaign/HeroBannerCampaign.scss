@@ -1,0 +1,81 @@
+@import './src/assets/scss/variables/index';
+@import './src/assets/scss/placeholders/index';
+
+.emplifi-campaign-banner {
+  background-color: $seagull;
+  overflow: hidden;
+
+  &__headline-top {
+    position: absolute;
+    color: $white;
+    @extend %text-style-h3;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-left: 20%;
+
+    @media (min-width: $mq-768) {
+      margin-top: 16px;
+    }
+
+    @media (min-width: $mq-1024) {
+      margin-top: 34px;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    @media (min-width: $mq-1024) {
+      height: 70vh;
+    }
+  }
+
+  &__content {
+    padding: 40px 22px;
+    z-index: 1;
+
+    @media (min-width: $mq-1024) {
+      padding: 80px 0 80px 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 992px;
+  }
+
+  &__title {
+    @extend %text-style-h2;
+    color: $seagull;
+    margin-bottom: calc(1ex * 1);
+  }
+
+  &__sub-title {
+    font-size: 22px;
+    line-height: calc(1ex / 0.42);
+    font-weight: $font-weight-bold;
+    color: $abbey;
+    margin-bottom: calc(1ex * 1);
+
+    @media (min-width: $mq-768) {
+      font-size: 32px;
+    }
+  }
+
+  &__perex {
+    @extend %text-style-paragraph;
+
+    p {
+      margin-bottom: calc(1ex * 1.5);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import './src/assets/scss/variables/index';
+
+.resource-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: $wildSand;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	padding-left: 22px;
+	padding-right: 22px;
+
+	&__container {
+		width: 100%;
+		max-width: 1280px;
+	}
+
+	&__button-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding-top: 70px;
+		background-color: $wildSand;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.resource-list {
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 90px;
+
+		&__button-container {
+			padding-top: 90px;
+		}
+	}
+}

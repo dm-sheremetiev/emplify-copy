@@ -1,0 +1,23 @@
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 12px;
+  margin-left: 15px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  li:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  li > a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+  }
+}
+

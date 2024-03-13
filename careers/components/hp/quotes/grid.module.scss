@@ -1,0 +1,45 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 64px;
+  max-width: 301px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'header header' 'item1 item2';
+    padding-bottom: 96px;
+    max-width: 100%;
+  }
+
+  @include xl {
+    padding-bottom: 114px;
+  }
+}
+
+.item {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 62px;
+  }
+
+  @include md {
+    justify-content: center;
+    align-self: flex-start;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

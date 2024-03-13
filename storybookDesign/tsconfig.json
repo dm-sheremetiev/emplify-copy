@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "../storybookBuild",
+    "noImplicitAny": true,
+    "outDir": "../storybookBuild",
+  },
+  "include": [
+    "src"
+, "../ThreeIconParagraph"  ],
+  "exclude": [
+    "node_modules",
+    "../storybookBuild",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.tsx"
+  ],
+  "types": [
+    "node",
+    "webpack",
+    "react",
+    "react-dom",
+    "reactstrap"
+  ],
+  "paths": {
+    "components/*": [
+      "src/components/*"
+    ]
+  }
+}

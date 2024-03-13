@@ -1,0 +1,80 @@
+/* stylelint-disable no-descending-specificity */
+@use 'sass:color';
+@import '@/careers/styles/media-queries';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/mixins';
+
+.departmentHeader {
+  padding: 48px 0;
+
+  @include md {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+    padding: 64px 0;
+  }
+
+  @include xl {
+    justify-content: center;
+  }
+
+  &.variantEmpty {
+    @include md {
+      min-height: 318px;
+    }
+
+    @include xl {
+      min-height: 313px;
+    }
+  }
+}
+
+.textWrapper {
+  @include md {
+    width: 407px;
+  }
+
+  @include lg {
+    width: 535px;
+  }
+
+  @include xl {
+    min-width: 650px;
+    text-align: center;
+  }
+}
+
+.description {
+  @include fontSize(16, 26);
+
+  @include md {
+    @include fontSize(18, 30);
+  }
+
+  a:any-link {
+    color: $teal;
+  }
+}
+
+.heading {
+  width: 100%;
+  margin-bottom: 24px;
+  @include fontSize(24, 34);
+
+  @include md {
+    @include fontSize(28, 40);
+  }
+
+  a:any-link {
+    transition: $defaultTransition;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $rhino20;
+    color: $rhino100;
+
+    &:hover {
+      color: $teal;
+      border-bottom-color: color.change($rhino20, $alpha: 0);
+    }
+  }
+}

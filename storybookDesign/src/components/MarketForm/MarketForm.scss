@@ -1,0 +1,160 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-market-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 64px;
+  padding-left: 45px;
+  padding-right: 45px;
+
+  &--type-alt,
+  &--type-article {
+    margin-top: 0;
+
+    .emplifi-market-form__header {
+      margin-top: 85px;
+    }
+  }
+
+  &--type-article {
+    .emplifi-market-form__form {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__cloud {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 30px;
+    height: 40px;
+    background-color: $chathamsBlue;
+    border-top-right-radius: 20px;
+  }
+
+  &__cloud-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 103px;
+    height: 40px;
+    background-color: $white;
+    border-bottom-right-radius: 22.695px;
+  }
+
+  &__cloud-behind {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 55px;
+    background-color: rgba($white, 0.6);
+    border-bottom-right-radius: 22.695px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 992px;
+  }
+
+  &__header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .typography.typography--Headline1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .typography.typography--Headline2 {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__form {
+    margin-bottom: 50px;
+
+    .mktoFormasd {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .mktoFormRow {
+      .mktoLabel,
+      .mktoHtmlText,
+      #LblConsent_To_Processing__c {
+        color: $white !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emplifi-market-form {
+    margin-top: 61.5px;
+
+    &--type-alt,
+    &--type-article {
+      margin-top: 0;
+
+      .emplifi-market-form__header {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 691px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .typography.typography--Headline1,
+      .typography.typography--Headline2 {
+        margin-top: 0 !important;
+      }
+    }
+
+    &--type-article {
+      .emplifi-market-form__form {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__cloud {
+      top: -61.5px;
+      left: 0;
+      width: 120px;
+      height: 123px;
+      border-top-right-radius: 61.5px;
+    }
+
+    &__cloud-front {
+      width: 103px;
+      height: 40px;
+    }
+
+    &__cloud-behind {
+      width: 200px;
+      height: 80px;
+    }
+
+    &__header {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .typography.typography--Headline1 {
+      font-size: 46px;
+      line-height: 50px;
+    }
+
+    .typography.typography--Headline2 {
+      margin-top: 70px;
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+}

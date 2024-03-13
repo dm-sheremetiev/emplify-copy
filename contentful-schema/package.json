@@ -1,0 +1,14 @@
+{
+  "name": "migrations",
+  "version": "1.0.0",
+  "description": "Migrations scripts for Emplifi project",
+  "dependencies": {},
+  "devDependencies": {
+    "contentful-cli": "^1.9.31"
+  },
+  "scripts": {
+    "migrate": "contentful space migration --yes true --space-id cpumif18y1gd --environment-id %npm_config_envir% %npm_config_migration%",
+    "export": "contentful space export --skip-content --space-id cpumif18y1gd --environment-id Emplifi_Merger_2021"
+  },
+  "author": "Moga Digital"
+}

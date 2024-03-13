@@ -1,0 +1,26 @@
+@import '@/careers/styles/media-queries';
+
+.wrapper {
+  background-color: #eee;
+  padding-bottom: 80px;
+
+  h1,
+  p {
+    @include lg {
+      max-width: 859px;
+    }
+
+    @include xl {
+      max-width: 847px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

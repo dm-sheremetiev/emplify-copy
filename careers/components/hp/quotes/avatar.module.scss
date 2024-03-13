@@ -1,0 +1,40 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.avatarHolder {
+  margin-bottom: 23px;
+  width: 133px;
+  height: 133px;
+
+  @include xl {
+    width: 145px;
+    height: 145px;
+  }
+
+  &::after {
+    z-index: 1;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.15);
+    content: '';
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+
+    @include lg {
+      top: 66.5px;
+    }
+
+    @include xl {
+      top: 72.5px;
+    }
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+  }
+}

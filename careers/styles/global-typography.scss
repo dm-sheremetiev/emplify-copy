@@ -1,0 +1,69 @@
+@import 'mixins';
+@import 'variables';
+@import 'media-queries';
+
+body {
+  font-family: $fontFamilyPrimary;
+  color: $rhino100;
+  background-color: #fff;
+}
+
+p {
+  font-family: $fontFamilySecondary;
+  @include fontSize(16, 26);
+  font-weight: 400;
+  color: $rhino100;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: $rhino100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $fontFamilyPrimary;
+  @include fontSize(16, 26);
+  font-weight: 400;
+  color: #000;
+}
+
+h1 {
+  @include fontSize(30, 42);
+  font-weight: 500;
+
+  @include md {
+    @include fontSize(42, 60);
+  }
+}
+
+h2 {
+  @include fontSize(26, 38);
+
+  @include md {
+    @include fontSize(36, 52);
+  }
+}
+
+h3 {
+  @include fontSize(24, 34);
+
+  @include md {
+    @include fontSize(28, 40);
+  }
+}
+
+h4 {
+  @include fontSize(20, 34);
+}
+
+h5 {
+  @include fontSize(16, 26);
+}

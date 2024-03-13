@@ -1,0 +1,119 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-article-call-to-action-container {
+  position: relative;
+}
+
+.emplifi-article-call-to-action {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 35px 250px;
+  background-color: $chathamsBlue;
+  margin: 2rem 0;
+
+  &__cloud {
+    position: absolute;
+    top: -36px;
+    right: -95px;
+    width: 190px;
+    height: 72px;
+    z-index: 0;
+    background-color: $white;
+    border-bottom-left-radius: 34px;
+  }
+
+  &__container {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 992px;
+  }
+
+  &__info {
+    .typography.typography--Headline2,
+    .typography.typography--Body1,
+    p {
+      color: $white !important;
+    }
+
+    .typography.typography--Headline2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .emplifi-button {
+      margin-top: 30px;
+    }
+  }
+
+  .emplifi-article-renderer {
+    padding: 0;
+    max-width: initial;
+  }
+}
+
+.emplifi-article-call-to-action-image-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  &__image {
+    width: 100%;
+    max-width: 230px;
+  }
+}
+
+.emplifi-article-call-to-action-white-space {
+  width: 100%;
+  height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .emplifi-article-call-to-action {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    min-height: 530px;
+    margin: 4rem 0;
+
+    &__container {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    &__info {
+      max-width: 423px;
+
+      .typography.typography--Headline2 {
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .emplifi-article-call-to-action-image-container {
+    bottom: 100px;
+
+    &__image {
+      max-width: 300px;
+    }
+  }
+
+  .emplifi-article-call-to-action-white-space {
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .emplifi-article-call-to-action-image-container {
+    &__image {
+      max-width: 600px;
+    }
+  }
+}

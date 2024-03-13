@@ -1,0 +1,80 @@
+{
+  "button": "Voir les {{positionsCount}} Offres d’emploi",
+  "map": "Peu importe votre origine : vous pourriez être le prochain membre de l’équipe Emplifi.",
+  "morePositionsButton": "Afficher {{hiddenPositionsCount}} autres offres d'emploi",
+  "nav": {
+    "title": "Carrières",
+    "openPositions": "Offres d’emploi",
+    "departments": "Départements",
+    "lifeAtEmplifi": "Travailler chez Emplifi",
+    "selectLng": "Choisir la langue"
+  },
+  "footer": {
+    "privacy": "Déclaration de confidentialité",
+    "moreAboutUs": "En savoir plus sur Emplifi"
+  },
+  "numbers": {
+    "founded": "Créé",
+    "employees": "Collaborateurs",
+    "nationalities": "Nationalités"
+  },
+  "jobDetail": {
+    "meta": {
+      "description": "Emploi de {{title}} à {{location}}",
+      "ogTitle": "Emploi de {{title}} chez Emplify",
+      "ogDescription": "Toutes les grandes décisions commencent par un premier pas. Postulez dès maintenant pour l’emploi de {{title}} à {{location}}"
+    },
+    "position": "position",
+    "department": "département",
+    "location": "localisation",
+    "metadata": {
+      "name": {
+        "Employment Type": "Type de contrat",
+        "Full-time": "Temps plein"
+      }
+    },
+    "button": "Postulez dès maintenant !"
+  },
+  "openPositions": {
+    "meta": {
+      "current": {
+        "title": "Offres d’emploi - Possibilités d’emploi {{locationName}}",
+        "description": "Vous recherchez un emploi chez Emplify ? Parcourez nos offres d’emploi à {{locationFullName}}. Votre prochain emploi n’est plus qu’à un clic.",
+        "og": {
+          "title": "Parcourez les Emplois chez Emplify à {{locationFullName}} !",
+          "description": "Vous recherchez un emploi chez Emplify ? Parcourez nos offres d’emploi à {{locationFullName}}. Votre prochain emploi n’est plus qu’à un clic !"
+        },
+        "twitterShare": "Vous recherchez un emploi chez Emplify ? Parcourez dès maintenant nos offres d’emploi à {{locationFullName}} !"
+      },
+      "title": "Offres d’emploi - Possibilités d’emploi et de stage",
+      "description": "Découvrez quels rôles passionnants Emplify peut vous offrir. Parcourez nos offres d’emploi et de stage dans l’informatique, le département des ventes, du marketing, et de bien d’autres encore. Prêts ?",
+      "og": {
+        "title": "Trouvez votre prochain emploi ou stage | Emplifi",
+        "description": "Découvrez quels rôles passionnants Emplify peut vous offrir. Parcourez nos offres d’emploi et de stage dans le département du développement, des ventes, du marketing, et de bien d’autres encore."
+      },
+      "twitterShare": "Parcourez toutes les offres d’emploi et de stage chez Emplify dans le département du développement, des ventes, du marketing, et de bien d’autres encore !"
+    },
+    "title": "C’est parti. Quel rôle vous conviendra ?",
+    "noPositionsTitle": "Oups - nous n’avons actuellement pas d’offre d’emploi à",
+    "noWorries": "Pas d’inquiétude !",
+    "noPositionsDescription": "Votre CV en vaut toutefois la peine ? Partagez-le nous ci-dessous et nous reviendrons vers vous si nous pensons pouvoir vous offrir un emploi adapté.",
+    "anyLocation": "n’importe où",
+    "allLocations": "Toutes les localisations"
+  },
+  "departments": {
+    "allRoles": "Vous pensez pouvoir correspondre à toutes les offres dans le {{departmentName}} ?",
+    "allRolesFilled": "Toutes nos possibilités dans le {{departmentName}} sont actuellement prises",
+    "ourWork": "Découvrez ce que nous faisons",
+    "getToKnowUs": "Apprenez-en davantage sur nous"
+  },
+  "jobSearch": {
+    "search": "Rechercher",
+    "noResult": "Il n’y a pas d’offres d’emploi correspondant à vos critères de recherche.",
+    "filterNameLabel": "Rechercher par mot-clé",
+    "filterNamePlaceholder": "ex: Marketing, New York",
+    "filterDepartmentLabel": "Départements",
+    "filterDepartmentPlaceholder": "Tous les départements",
+    "filterLocationLabel": "Location",
+    "filterLocationPlaceholder": "Tous les sites"
+  }
+}

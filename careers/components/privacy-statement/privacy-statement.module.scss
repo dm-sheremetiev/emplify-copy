@@ -1,0 +1,36 @@
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.wrapper {
+  h2 {
+    margin-bottom: 24px;
+  }
+}
+
+.section {
+  margin-bottom: 48px;
+
+  @include md {
+    margin-bottom: 96px;
+  }
+
+  @include lg {
+    max-width: 859px;
+  }
+
+  @include xl {
+    max-width: 847px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+
+  p ~ h2 {
+    padding-top: 24px;
+
+    @include md {
+      padding-top: 40px;
+    }
+  }
+}

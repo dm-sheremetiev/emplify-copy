@@ -1,0 +1,14 @@
+button {
+  appearance: none;
+  transition: all 200ms ease-in;
+
+  &:hover {
+    transform-origin: center;
+  }
+
+  &:focus {
+    outline-offset: 3px;
+    border-color: transparent;
+    outline: 3px solid currentColor;
+  }
+}

@@ -1,0 +1,55 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-customer-stories {
+	padding-top: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 60px;
+	background-color: $abbey;
+
+	&__container {
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	&__title-container {
+		border-bottom: 1px solid $white;
+	}
+
+	.typography.typography--Headline2 {
+		margin-bottom: 15px;
+		color: $white;
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 500;
+	}
+
+	&__stories {
+		margin-top: 36px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.emplifi-customer-stories {
+		padding-top: 50px;
+		padding-bottom: 160px;
+
+		&__container {
+		}
+
+		&__title-container {
+		}
+
+		.typography.typography--Headline2 {
+			margin-bottom: 50px;
+			font-size: 36px;
+			line-height: 40px;
+			text-align: center;
+		}
+
+		&__stories {
+			margin-top: 80px;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 16px;
+  background-color: white;
+  margin-bottom: 32px;
+  width: 288px;
+  height: 110px;
+  transition: $defaultTransition;
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    width: 10.5px;
+    height: 10.5px;
+    border-style: none;
+    border-left: 3px solid $rhino40;
+    border-bottom: 3px solid $rhino40;
+    transform: rotate(-135deg);
+  }
+
+  @include md {
+    width: 344px;
+    height: 135px;
+    padding-right: 24px;
+  }
+
+  @include lg {
+    width: 292px;
+  }
+
+  @include xl {
+    width: 359px;
+    height: 167px;
+    padding-right: 48px;
+  }
+
+  img {
+    margin-bottom: 6px;
+
+    @include md {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  img {
+    height: 50px;
+  }
+}

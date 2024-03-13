@@ -1,0 +1,138 @@
+.list {
+  background-color: #fff;
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+
+  li {
+    text-align: left
+  }
+}
+
+.listItem {
+  text-align: left;
+}
+
+.listHeading {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+  color: #7B8694;
+
+  @media (min-width: 992px) {
+    margin-bottom: 24px;
+  }
+}
+
+.link {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 64px;
+  padding: 19px 20px 19px 16px;
+  border-bottom: 1px solid #e5e5e5;
+  text-decoration: none;
+  border-radius: 2px;
+
+  @media (min-width: 768px) {
+    min-height: 90px;
+    padding: 32px 36px 32px;
+  }
+
+  h2 {
+    transition: all 0.2s;
+    max-width: 138px;
+    color: #2F3744;
+
+    @media (min-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  p {
+    display: inline;
+    border-bottom: 1px solid rgba(102, 109, 233, 0.3);
+    padding-bottom: 0;
+    position: relative;
+    color: #7B8694;
+    font-size: 1em;
+    line-height: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-appearance: none;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    background: none;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 26px;
+
+    @media (min-width: 768px) {
+      margin-right: 74px;
+    }
+
+    @media (min-width: 992px) {
+      display: inline-block;
+    }
+
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      width: 2px;
+      height: 8px;
+      content: '';
+      display: inline-block;
+      background-color: #7B8694;
+      transition: all 0.2s;
+      right: -24px;
+
+      @media (min-width: 992px) {
+        right: -74px;
+      }
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+      top: 6px;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+      top: 11px;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    border-bottom: 1px solid #fff;
+
+    h2 {
+      color: #485DAA;
+    }
+
+    p {
+      &:before,
+      &:after {
+        right: -27px;
+
+        @media (min-width: 992px) {
+          right: -77px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/queries/*": [
+        "queries/*"
+      ],
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/interfaces/*": [
+        "interfaces/*"
+      ],
+      "@/Storybook/*": [
+        "Storybook/*"
+      ],
+      "@/careers/*": [
+        "careers/*"
+      ]
+    },
+    "target": "es2015",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noUnusedLocals": true
+  },
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "_next",
+    "storybookDesign",
+    "search-service-js"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "next.config.js"
+  ]
+}

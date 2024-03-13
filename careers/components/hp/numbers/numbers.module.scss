@@ -1,0 +1,60 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.list {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 88px;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include md {
+    justify-content: space-between;
+    max-width: 504px;
+    margin-right: auto;
+    padding-top: 96px;
+    margin-bottom: 72px;
+  }
+
+  @include lg {
+    max-width: 612px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include xl {
+    margin-right: 0;
+    transform: translateX(-21px);
+    max-width: 524px;
+    margin-bottom: 98px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 130px;
+  @include fontSize(40, 40);
+  color: $rhino40;
+  font-weight: 500;
+  margin-bottom: 24px;
+
+  &:first-child {
+    color: $brandRoyal;
+  }
+
+  span {
+    padding-top: 8px;
+    display: block;
+    text-transform: uppercase;
+    color: $rhino100;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+}

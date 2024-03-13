@@ -1,0 +1,51 @@
+{
+  "absolute_url": "https://boards.greenhouse.io/socialbakers/jobs/4077145003",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "retention_period": null
+    }
+  ],
+  "internal_job_id": 4055015003,
+  "location": {
+    "name": "Berlin, Berlin, Germany, München, Bayern, Germany"
+  },
+  "metadata": [
+    {
+      "id": 4154730003,
+      "name": "Employment Type",
+      "value": "Full-time",
+      "value_type": "single_select"
+    }
+  ],
+  "id": 4077145003,
+  "updated_at": "2020-06-03T08:44:18-04:00",
+  "requisition_id": "28",
+  "title": "Enterprise Account Executive DACH",
+  "content": "&lt;div&gt;It’s official, Digital spend has finally surpassed traditional TV investment across the globe and within this ecosystem, Social Media monetization is a serious conversation at the heart of every organization. With the exponential growth of valuable content displayed on social media, the appetite for Socialbakers solutions has never been more apparent. Socialbakers has grown from a small start up to an internationally recognized partner for the top Fortune 500 companies spread across 15 offices world-wide. To continue on our expansion mission and keep up with the market demand, Socialbakers is expanding its sales team in the region based in our Berlin or Munich office.&lt;br&gt;&lt;br&gt;&lt;/div&gt;\n&lt;div&gt;An Account Executive is responsible for selling the Socialbakers value proposition to qualified inbound leads and self-sourced prospects. &lt;br&gt;Targeted clients will consist of brands, companies, as well as media and agencies. Travel will be required. &lt;/div&gt;\n&lt;div&gt; &lt;/div&gt;\n&lt;div&gt; &lt;/div&gt;\n&lt;div&gt;&lt;strong&gt;Key Responsibilities&lt;br&gt;&lt;/strong&gt;&lt;/div&gt;\n&lt;ul&gt;\n&lt;li&gt;Be a trusted advisor and a credible partner for discussion with C-level management&lt;/li&gt;\n&lt;li&gt;Create multiple opportunities with different budget holders within an organization and across various departments&lt;/li&gt;\n&lt;li&gt;Translate your product knowledge to a winning strategy to engage clients around value&lt;/li&gt;\n&lt;li&gt;Sell value and consistently close new business&lt;/li&gt;\n&lt;li&gt;Own regionally strategic entry points&lt;/li&gt;\n&lt;li&gt;Maintain a profound market knowledge including relevant stakeholders and decision makers in the industry&lt;/li&gt;\n&lt;li&gt;Ability to work as a team and motivate business development resources assigned to generate high quality opportunities.&lt;/li&gt;\n&lt;li&gt;Leverage marketing foundation and key acquisition channels for business purposes&lt;/li&gt;\n&lt;li&gt;Manage complex structures and large sales cycles&lt;/li&gt;\n&lt;/ul&gt;\n&lt;div&gt; &lt;/div&gt;\n&lt;div&gt; &lt;/div&gt;\n&lt;div&gt;&lt;strong&gt;Skills &amp;amp; Qualifications&lt;br&gt;&lt;/strong&gt;&lt;/div&gt;\n&lt;ul&gt;\n&lt;li&gt;8+ years of proven sales experience within SaaS/SW/Digital Marketing area with a successful track of new business closed &lt;/li&gt;\n&lt;li&gt;Strong sales instinct and excellent negotiation skills&lt;/li&gt;\n&lt;li&gt;Martech expertise and technical acumen to grasp a complex product &lt;/li&gt;\n&lt;li&gt;Fluent German and English on a business level is a must&lt;/li&gt;\n&lt;li&gt;Additional language is an advantage&lt;/li&gt;\n&lt;li&gt;Strong public speaking skills and ability to coordinate multiple stakeholders&lt;/li&gt;\n&lt;li&gt;Sales data-driven approach&lt;/li&gt;\n&lt;li&gt;Great work ethic and competitive drive to be the best &lt;/li&gt;\n&lt;/ul&gt;\n&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;\n&lt;div&gt;&lt;strong&gt;We Offer&lt;br&gt;&lt;/strong&gt;&lt;/div&gt;\n&lt;ul&gt;\n&lt;li&gt;Agile and open-minded culture and a high level of flexibility&lt;/li&gt;\n&lt;li&gt;Possibility to learn new technologies and encourage new ideas&lt;/li&gt;\n&lt;li&gt;Occasional traveling to Prague for company events and training sessions&lt;/li&gt;\n&lt;li&gt;Workshops and meetings with various experts from the filed&lt;/li&gt;\n&lt;li&gt;Health insurance, 25 days of holidays&lt;/li&gt;\n&lt;li&gt;And others...it is definitely worth to meet with us! &lt;/li&gt;\n&lt;/ul&gt;",
+  "departments": [
+    {
+      "id": 4013842003,
+      "name": "Sales - AE - Manager",
+      "child_ids": [],
+      "parent_id": 4013720003
+    }
+  ],
+  "offices": [
+    {
+      "id": 4007986003,
+      "name": "Berlin",
+      "location": "Berlin, Berlin, Germany",
+      "child_ids": [],
+      "parent_id": null
+    },
+    {
+      "id": 4007985003,
+      "name": "Munich",
+      "location": "München, Bayern, Germany",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}

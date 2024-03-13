@@ -1,0 +1,77 @@
+@import './src/assets/scss/variables/index';
+@import './src/assets/scss/placeholders/index';
+
+
+.emplifi-statistic {
+	--link-color: #{$wildSand};
+	background: {
+		image: linear-gradient(to right, $chathamsBlue, $pictonBlue);
+	}
+	overflow: hidden;
+	padding: $spacing-sm;
+	// Custom states
+	&--unit-left {
+		.emplifi-statistic__unit {
+			order: -1;
+		}
+	}
+	// Basic entities
+	a {
+		@extend %link-style-underline;
+		@extend %link-style-hover-invert;
+		&:hover {
+			--link-color: #{$chathamsBlue};
+		}
+	}
+	// Named classes
+	&__content {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		margin: ($spacing-sm * -1) auto;
+		max-width: $max-width-content;
+	}
+	&__description {
+		color: $wildSand;
+		display: block;
+		flex: 1 1 50%;
+		margin: 0 0 $spacing-xs 0;
+		@media (min-width: $mq-768) {
+			margin: $spacing-xs 0;
+		}
+	}
+	&__number,
+	&__unit {
+		color: $wildSand;
+		display: block;
+		font-weight: $font-weight-bold;
+		height: 100%;
+		letter-spacing: -0.05em;
+		line-height: 1;
+		margin: {
+			// bottom: ($spacing-xs * -1);
+			// top: ($spacing-xs * -0.5);
+			right: 0.15em;
+		}
+		mix-blend-mode: overlay;
+		//
+		@media (min-width: $mq-768) {
+			margin: {
+				bottom: ($spacing-sm * -1);
+				// top: ($spacing-xs * -1);
+			}
+			transform: translateY($spacing-xs * -0.75);
+		}
+	}
+	&__number {
+		font-size: clamp(48px, 30vw, 154px);
+		transform: scale(1.15);
+		@media (min-width: $mq-768) {
+			transform: scale(1.15) translateY($spacing-xs * -0.75);
+		}
+	}
+	&__unit {
+		align-self: flex-start;
+		font-size: clamp(24px, 15vw, 77px);
+	}
+}

@@ -1,0 +1,175 @@
+.heroBanner {
+  padding-top: 16px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 32px;
+  min-height: 760px;
+  background-color: #fff;
+
+  @media (min-width: 768px) {
+    padding-top: 48px;
+    text-align: left;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 64px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    background-color: #F0F0F0;
+    z-index: 0;
+
+    @media (min-width: 992px) {
+      height: 250px;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 576px) {
+    max-width: 542px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 752px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 972px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1172px;
+  }
+}
+
+.bannerHead {
+  max-width: 724px;
+
+  @media (min-width: 1200px) {
+    max-width: 683px;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 500;
+
+    @media (min-width: 768px) {
+      font-size: 42px;
+      line-height: 60px;
+    }
+  }
+
+  p {
+    margin-bottom: 24px;
+    color: #535E70;
+
+    @media (min-width: 768px){
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 992px){
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.bannerContent {
+  @media (min-width: 768px) {
+    position: relative;
+  }
+
+  @media (min-width: 992px) {
+    display: block;
+    position: static;
+  }
+}
+
+.bannerList {
+  text-align: left;
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    max-width: 406px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: none;
+    display: grid;
+    grid-column-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 32px;
+      }
+
+      @media (min-width: 992px) {
+        margin-bottom: 24px;
+      }
+    }
+
+    h2 {
+      font-weight: 500;
+      line-height: 26px;
+      color: #000;
+      margin-bottom: 12px;
+      padding-left: 36px;
+      background: url("../../assets/circle-check.svg") no-repeat 0 0;
+      background-size: 24px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: #2F3744;
+
+      @media (min-width: 1200px) {
+        max-width: 319px;
+      }
+    }
+  }
+}
+
+.bannerImg {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(76px, 16px);
+  }
+
+  @media (min-width: 992px) {
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translate(285px, 0);
+  }
+
+  @media (min-width: 1200px) {
+    transform: translate(176px, 25px);
+  }
+}

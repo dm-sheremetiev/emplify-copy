@@ -1,0 +1,12 @@
+.tableHeader {
+  border-top: 1px solid #D2D6DC;
+  padding-top: 24px;
+
+  @media (min-width: 768px) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 16px;
+  }
+}

@@ -1,0 +1,39 @@
+@import './src/assets/scss/variables/index';
+@import './src/assets/scss/placeholders/index';
+
+.emplifi-alert-bar {
+	display: flex;
+	padding: $spacing-xs;
+	position: sticky;
+	z-index: 999;
+	top: 0;
+	width: 100%;
+	&__text-container {
+		flex: 1 0 66%;
+		@media (min-width: $mq-1024) {
+			text-align: center;
+		}
+	}
+	&__close-button-container {
+		align-items: flex-start;
+		display: flex;
+		margin-left: $spacing-xs;
+		svg {
+			cursor: pointer;
+		}
+	}
+	&__button-msg {
+		padding-right: $spacing-xs;
+	}
+	&__close-button-container {
+	}
+	a {
+		color: inherit;
+		@extend %link-style-underline; //TODO: normalize links styles
+	}
+	button {
+		&:hover {
+			transform: scale(1.15);
+		}
+	}
+}

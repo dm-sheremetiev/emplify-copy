@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="979.085" height="505.019" viewBox="0 0 979.085 505.019">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#485daa"/>
+      <stop offset="0.86" stop-color="#1a4073"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="3.372" y1="-0.111" x2="3.372" y2="0.889" gradientUnits="objectBoundingBox">
+      <stop offset="0.47" stop-color="#65bbe9"/>
+      <stop offset="1" stop-color="#193973"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-0.264" y1="1.159" x2="-0.264" y2="2.159" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#98d2be" stop-opacity="0.4"/>
+      <stop offset="0.77" stop-color="#03699b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="-0.435" y1="0.116" x2="-0.435" y2="1.116" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#69bae8"/>
+      <stop offset="1" stop-color="#98d2be"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="1.907" y1="-4.593" x2="1.907" y2="-5.593" gradientUnits="objectBoundingBox">
+      <stop offset="0.01" stop-color="#98d2be"/>
+      <stop offset="1" stop-color="#69bae8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="8.438" y1="-10.133" x2="8.438" y2="-11.133" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#485daa"/>
+      <stop offset="1" stop-color="#a9e0fc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="0.675" y1="-3.589" x2="1.544" y2="-3.589" xlink:href="#linear-gradient-4"/>
+    <linearGradient id="linear-gradient-8" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient-5"/>
+    <linearGradient id="linear-gradient-9" x1="0.007" y1="0.504" x2="1.007" y2="0.504" xlink:href="#linear-gradient-5"/>
+    <linearGradient id="linear-gradient-10" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#98d2be"/>
+      <stop offset="1" stop-color="#03699b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" x1="-15.459" y1="2.485" x2="-15.459" y2="3.485" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-12" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-13" y1="0.498" x2="1" y2="0.498" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Collage-Example-OnWhite2" transform="translate(0 0)" style="mix-blend-mode: normal;isolation: isolate">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+      <path id="Path_9" data-name="Path 9" d="M737.181,273.38H712.7V248.913c0-65.244-53.378-118.623-118.622-118.623h-.268c-65.233,0-118.611,53.378-118.611,118.623V273.38H450.733C385.488,273.38,332.11,326.759,332.11,392h0c0,65.233,53.379,118.611,118.623,118.611H737.181c65.244,0,118.612-53.378,118.612-118.611h0C855.782,326.759,802.414,273.38,737.181,273.38Z" transform="translate(-104.855 -80.372)" fill="url(#linear-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="130.477" height="287.878" rx="65" transform="translate(0 295.725) rotate(-90)" fill="url(#linear-gradient-2)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="227.835" height="502.686" rx="113.918" transform="translate(979.085 0) rotate(90)" fill="url(#linear-gradient-3)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="107.594" height="237.39" rx="53.797" transform="translate(251.707 466.744) rotate(-90)" fill="url(#linear-gradient-4)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="39.504" height="87.156" rx="19.752" transform="translate(288.994 354.986) rotate(90)" fill="url(#linear-gradient-5)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <rect id="Rectangle_8" data-name="Rectangle 8" width="55.522" height="122.496" rx="27.761" transform="translate(94.456 321.666) rotate(-90)" fill="url(#linear-gradient-6)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Path_11" data-name="Path 11" d="M318.775,542.991l-22.258-22.325a15,15,0,0,1,21.208-21.209l1.116,1.116,1.116-1.116a15,15,0,0,1,21.209,21.209Zm-11.665-45.208a12.357,12.357,0,0,0-8.74,21.074l20.4,20.394,20.394-20.394A12.357,12.357,0,0,0,321.7,501.388l-2.924,2.925-2.925-2.925A12.279,12.279,0,0,0,307.111,497.783Z" transform="translate(-109.503 -37.971)" fill="url(#linear-gradient-7)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Path_12" data-name="Path 12" d="M350.679,137.92h0a53.825,53.825,0,0,0-53.669,53.669v11.073H285.938A53.814,53.814,0,0,0,232.28,256.33h0a53.814,53.814,0,0,0,53.658,53.658h118.4V202.651h0V191.589a53.814,53.814,0,0,0-53.658-53.669Z" transform="translate(-116.459 -79.485)" fill="url(#linear-gradient-8)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Path_14" data-name="Path 14" d="M419.679,238.836l-15.627-15.627A10.716,10.716,0,1,1,419.2,208.062l.447.446.447-.446a10.716,10.716,0,0,1,15.147,15.147Zm-8.015-31.255a8.093,8.093,0,0,0-5.726,13.808l13.741,13.786,13.73-13.8a8.093,8.093,0,0,0-11.441-11.441l-2.3,2.3-2.3-2.3a8.07,8.07,0,0,0-5.7-2.366Z" transform="translate(-96.885 -71.724)" fill="url(#linear-gradient-9)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Path_15" data-name="Path 15" d="M820.395,141.756h0a9.421,9.421,0,0,1,13.294,0l1.373,1.373,1.373-1.373a9.421,9.421,0,0,1,13.294,0h0a9.421,9.421,0,0,1,0,13.294l-1.373,1.373-13.294,13.294-13.294-13.294h0l-1.373-1.373A9.443,9.443,0,0,1,820.395,141.756Z" transform="translate(-48.416 -79.358)" fill="none" stroke="#fff" stroke-width="1.76"/>
+      <path id="Path_17" data-name="Path 17" d="M819.62,324.58" transform="translate(-48.188 -57.788)" fill="none" stroke="#707070" stroke-width="3.52" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Path_18" data-name="Path 18" d="M803,492.324V453.87h29.993v29.993H811.461Zm2.623-35.831V486l4.755-4.755H830.37V456.493Z" transform="translate(-297.724 -357.48)" opacity="0.565" fill="url(#linear-gradient-10)"/>
+      <path id="Path_19" data-name="Path 19" d="M721.282,420.363l-8.461-8.461H691.3V400.215h2.612v9.064h20l4.744,4.755v-29.5H704.695V381.92h16.587Z" transform="translate(-167.249 -270.326)" opacity="0.565" fill="url(#linear-gradient-11)"/>
+      <g id="Group_3" data-name="Group 3" transform="translate(837.982 259.961)" opacity="0.641" style="mix-blend-mode: multiply;isolation: isolate">
+        <rect id="Rectangle_9" data-name="Rectangle 9" width="2.623" height="36.959" transform="translate(17.168)" fill="url(#linear-gradient-12)"/>
+        <rect id="Rectangle_10" data-name="Rectangle 10" width="36.959" height="2.623" transform="translate(0 17.179)" fill="url(#linear-gradient-13)"/>
+      </g>
+      <g id="Group_4" data-name="Group 4" transform="translate(777.258 342.54)" opacity="0.641" style="mix-blend-mode: multiply;isolation: isolate">
+        <rect id="Rectangle_11" data-name="Rectangle 11" width="2.623" height="18.485" transform="translate(7.925)" fill="url(#linear-gradient)"/>
+        <rect id="Rectangle_12" data-name="Rectangle 12" width="18.485" height="2.623" transform="translate(0 7.936)" fill="url(#linear-gradient-13)"/>
+      </g>
+      <line id="Line_3" data-name="Line 3" y2="21.722" transform="translate(427.415 435.372)" fill="none" stroke="#fff" stroke-width="2.35" opacity="0.541"/>
+      <line id="Line_4" data-name="Line 4" x1="21.722" transform="translate(416.554 446.233)" fill="none" stroke="#fff" stroke-width="2.35" opacity="0.541"/>
+      <line id="Line_5" data-name="Line 5" y2="21.733" transform="translate(94.456 219.62)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.35" opacity="0.416"/>
+      <line id="Line_6" data-name="Line 6" x1="21.733" transform="translate(83.595 230.492)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.35" opacity="0.416"/>
+      <line id="Line_7" data-name="Line 7" y2="43.489" transform="translate(174.725 176.131)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.35" opacity="0.416"/>
+      <line id="Line_8" data-name="Line 8" x1="43.5" transform="translate(152.969 197.875)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.35" opacity="0.416"/>
+    </g>
+  </g>
+</svg>

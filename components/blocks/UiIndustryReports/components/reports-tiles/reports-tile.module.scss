@@ -1,0 +1,159 @@
+.tile {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  text-decoration: none;
+  padding: 0 24px;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background-color: #000;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: 768px) {
+    max-width: 360px;
+    border-radius: 2px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 0 32px;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 240px;
+  }
+
+  &:hover {
+    .backgroundImage {
+      transform: scale(1.1);
+    }
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100.28%);
+    opacity: 0.7;
+    z-index: 3;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.7;
+    z-index: 0;
+
+    @media (min-width: 992px) {
+      opacity: 0.2;
+      z-index: 1;
+    }
+  }
+
+  &.asHeader {
+    overflow: visible;
+    min-height: 155px;
+    padding: 0 16px;
+    cursor: auto;
+    margin-bottom: 24px;
+
+    @media (min-width: 992px) {
+      padding: 0 32px;
+      min-height: 240px;
+      max-width: 100%;
+      margin-bottom: 32px;
+    }
+
+    &:hover {
+      .backgroundImage {
+        transform: none;
+      }
+    }
+  }
+}
+
+.tileContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 4;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  &.asHeader {
+    max-width: 150px;
+
+    @media (min-width: 992px) {
+      font-size: 28px;
+      line-height: 40px;
+      max-width: 100%;
+    }
+  }
+}
+
+.tileItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  p {
+    position: relative;
+    color: #fff;
+    margin-right: 26px;
+
+    &:nth-child(2) {
+      display: none;
+      margin-right: 0;
+
+      @media (min-width: 992px) {
+      display: block;
+    }
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: -13px;
+        margin: auto;
+        width: 2px;
+        height: 2px;
+        background: #fff;
+      }
+    }
+  }
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.icon {
+  width: 24px;
+  height: 22px;
+  margin-bottom: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

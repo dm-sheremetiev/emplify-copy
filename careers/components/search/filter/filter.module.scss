@@ -1,0 +1,40 @@
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.wrapper {
+  flex-shrink: 0;
+  width: 300px;
+  margin-top: 20px;
+  margin-right: 16px;
+
+  label {
+    padding: 0 4px 8px;
+    display: block;
+  }
+
+  @include md {
+    top: $headerHeightDesktop + 20;
+    position: sticky;
+  }
+}
+
+.input {
+  border: 1px solid #000;
+  height: 50px;
+  font-weight: 400;
+  border-radius: 2px;
+  font-style: normal;
+  width: 100%;
+  display: block;
+  appearance: none;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+.button {
+  margin-top: 20px;
+  height: 50px !important;
+  width: 100% !important;
+}

@@ -1,0 +1,130 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-product-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	&__logo-menu-button-container {
+		height: 60px;
+		padding: 13px 16px;
+		padding-right: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid $doveGray;
+	}
+
+	&__logo {
+		height: 34px;
+		width: auto;
+	}
+
+	&__button {
+		padding: 13px;
+	}
+
+	&__desktop-only {
+		display: none;
+	}
+}
+
+.emplifi-product-header-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 13px 12px;
+	background-color: $white;
+}
+
+.emplifi-product-header-menu-item {
+	padding: 9px 12px;
+
+	.typography.typography--ProductHeaderLink {
+		color: $abbey !important;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.emplifi-product-header {
+		// position: relative;
+		// padding: 20px 45px;
+		padding: 0;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid $doveGray;
+
+		&__logo-menu-button-container {
+			position: absolute;
+			left: 30px;
+			// left: 45px;
+			display: initial;
+			padding: 0;
+			height: initial;
+			border-bottom: none;
+		}
+
+		&__button {
+			display: none;
+		}
+
+		&__mobile-only {
+			display: none;
+		}
+
+		&__desktop-only {
+			display: initial;
+		}
+	}
+
+	.emplifi-product-header-menu {
+		padding: 0;
+
+		&__require-text {
+			font-size: 16px;
+			color: $jazzberryJam;
+		}
+	}
+
+	.emplifi-product-header-menu-item {
+		position: relative;
+		padding: 0;
+		margin-left: 20px;
+		margin-right: 20px;
+
+		&:first-child {
+			margin-left: 0px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+
+			&::after {
+				position: relative;
+				content: none;
+				right: 0px;
+				height: initial;
+				width: initial;
+				background: none;
+			}
+		}
+
+		&::after {
+			position: absolute;
+			right: -20px;
+			content: "";
+			height: 10px;
+			width: 1px;
+			height: 100%;
+			background-color: $silver;
+		}
+	}
+}

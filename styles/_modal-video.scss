@@ -1,0 +1,13 @@
+.modal-video-close-btn {
+  background: #fff !important;
+  border-radius: 50px;
+}
+
+.modal-video-close-btn:before,
+.modal-video-close-btn:after {
+  width: 20px !important;
+  top: 48% !important;
+  left: 20% !important;
+  background: #000 !important;
+  margin: 0 !important;
+}

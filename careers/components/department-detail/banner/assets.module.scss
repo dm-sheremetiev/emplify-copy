@@ -1,0 +1,35 @@
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.assets {
+  position: relative;
+
+  @include md {
+    position: absolute;
+    right: 0;
+    max-width: 50%;
+  }
+
+  @include lg {
+    position: relative;
+    margin-left: auto;
+  }
+}
+
+.img {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+
+  @include lg {
+    position: relative;
+    top: 3px;
+    margin-left: auto;
+  }
+
+  @include xl {
+    top: 0;
+    margin-left: 126px;
+  }
+}

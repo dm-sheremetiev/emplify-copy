@@ -1,0 +1,11 @@
+/// Default spacing size that all other spacing, safe-area, etc. is based off.
+$_spacing: 2.1875rem; // 35px
+
+$spacing-xs: $_spacing * 0.5; // 17.5px
+$spacing-sm: $_spacing; // 35px
+$spacing-md: $_spacing * 2; // 70px
+$spacing-lg: $_spacing * 3; // 105px
+$spacing-xl: $_spacing * 4; // 140px
+
+$max-width-content: 992px; //TODO: change to optimal line length (~80ch);
+$max-width-page: $mq-1280;

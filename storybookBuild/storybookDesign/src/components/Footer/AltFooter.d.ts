@@ -1,0 +1,21 @@
+import './Footer.scss';
+import { ReactNode, FC } from "react";
+export type FooterProps = {
+    id?: string;
+    className?: string;
+    children?: ReactNode;
+    img?: ReactNode[] | any[];
+    imgSrc?: string;
+    imgAlt?: string;
+    imgTitle?: string;
+    copyright?: ReactNode | string;
+    logoChildren?: ReactNode | string;
+    type?: 'default' | 'alt' | 'article';
+    title?: string;
+    subTitle?: string;
+    formChildren?: ReactNode | string;
+    socialCollection?: ReactNode;
+    backgroundFormColor?: string;
+};
+declare const AltFooter: FC<FooterProps>;
+export default AltFooter;

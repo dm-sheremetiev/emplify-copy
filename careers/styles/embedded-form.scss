@@ -1,0 +1,476 @@
+// NOTE: Avoid using @/careers alias in this file and its dependencies since it is processed by sass directly,
+// without Webpack's path aliases.
+@import 'mixins';
+@import 'variables';
+@import 'reset';
+@import 'media-queries';
+@import 'global-typography';
+
+body {
+  background-color: transparent;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+li {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin-bottom: 24px;
+}
+
+h3 {
+  margin-bottom: 18px;
+}
+
+h4 {
+  margin-bottom: 18px;
+}
+
+h5 {
+  margin-bottom: 18px;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+pre {
+  white-space: normal;
+  margin-bottom: 12px;
+  font-family: monospace;
+}
+
+em {
+  font-style: italic;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-left: 34px;
+  margin-bottom: 48px;
+}
+
+@include md {
+  ul,
+  ol {
+    margin-bottom: 64px;
+  }
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+  padding-top: 12px;
+}
+
+#wrapper,
+#main,
+#application,
+#app_body {
+  max-width: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+#app_body {
+  padding: 0 !important;
+}
+
+#application {
+  background-color: #fff;
+  padding: 32px 16px;
+}
+
+@include sm {
+  #application {
+    padding: 32px;
+  }
+}
+
+#application div.required-fields {
+  font-family: $fontFamilySecondary;
+  font-size: 13px;
+  line-height: 20px;
+  color: $rhino60;
+  margin-bottom: 4px;
+}
+
+#application hr {
+  display: none !important;
+}
+
+.asterisk {
+  color: $rhino60 !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+#application .heading {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+  float: none;
+}
+
+@include md {
+  #application .heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.field {
+  display: flex !important;
+  flex-direction: column !important;
+  clear: none !important;
+  overflow: unset !important;
+  line-height: unset !important;
+  margin-bottom: 28px !important;
+}
+
+.field .field-error,
+.field .field-error:focus,
+.field .field-error:hover {
+  border-color: $red !important;
+}
+
+.field p {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.field br {
+  display: none;
+}
+
+label {
+  font-family: $fontFamilySecondary !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  color: $rhino100 !important;
+  margin-right: 0 !important;
+  display: block !important;
+  margin-bottom: 8px !important;
+  text-align: left !important;
+  float: none !important;
+}
+
+input[type='text'] {
+  font-family: $fontFamilySecondary;
+  border: 1px solid $rhino20 !important;
+  border-radius: 2px !important;
+  height: 48px !important;
+  background-color: #fff !important;
+  padding: 14px 12px !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  font-style: normal !important;
+  color: $rhino100 !important;
+  width: 100% !important;
+  display: block !important;
+  -webkit-appearance: none !important;
+}
+
+input[type='text']:hover {
+  border: 1px solid $rhino40 !important;
+}
+
+input[type='text']:focus {
+  border: 1px solid $teal !important;
+  outline: none !important;
+}
+
+input[type='button'] {
+  padding: 11px 24px !important;
+  margin-bottom: 0 !important;
+  vertical-align: middle !important;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block !important;
+  border: 0 !important;
+  border-radius: 2px !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+  text-align: center !important;
+  width: 100% !important;
+  font-family: $fontFamilySecondary !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+  height: auto !important;
+  white-space: nowrap !important;
+  transition: all 0.5s !important;
+  color: #fff !important;
+  background-color: $jazzberryJam !important;
+}
+
+@include xs {
+  input[type='button'] {
+    width: auto !important;
+  }
+}
+
+input[type='button']:hover {
+  background-color: $darkBlue !important;
+  color: #fff !important;
+}
+
+input[type='button']:active {
+  background-color: $darkBlue;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  color: #fff !important;
+}
+
+textarea {
+  font-family: $fontFamilySecondary;
+  border: 1px solid $rhino20 !important;
+  border-radius: 2px !important;
+  background-color: #fff !important;
+  padding: 14px 12px !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  color: $rhino100 !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+textarea:focus {
+  border: 1px solid $teal !important;
+  outline: none !important;
+}
+
+.attach-or-paste .link-container a {
+  border: 2px solid rgba(73, 199, 237, 0.5) !important;
+  border-radius: 2px !important;
+  height: 48px !important;
+  background-color: #fff !important;
+  padding: 14px 12px !important;
+  font-style: normal !important;
+  color: $rhino100 !important;
+  width: 100% !important;
+  display: block !important;
+  font-family: $fontFamilySecondary !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+@include sm {
+  .attach-or-paste .link-container a {
+    height: auto !important;
+    border: none !important;
+    line-height: 26px !important;
+    color: $teal !important;
+    display: inline !important;
+    font-weight: normal !important;
+    padding: 0 0 3px 0 !important;
+    border-bottom: 1px solid $rhino20 !important;
+    margin-right: 16px !important;
+  }
+}
+
+.attach-or-paste .link-container a:hover {
+  text-decoration: none !important;
+}
+
+@include sm {
+  .attach-or-paste .link-container a:hover {
+    border-color: transparent !important;
+  }
+}
+
+.attach-or-paste .link-container a:after {
+  display: none;
+}
+
+.field-error-msg {
+  color: $red !important;
+  font-size: 14px !important;
+  line-height: 14px;
+  display: block;
+  margin-top: 4px;
+  text-align: right;
+}
+
+.field-error-msg img {
+  display: none;
+}
+
+#submit_buttons {
+  text-align: center;
+}
+
+.select2-choice {
+  font-family: $fontFamilySecondary;
+  border: 1px solid $rhino20 !important;
+  border-radius: 2px !important;
+  height: 48px !important;
+  background-color: #fff !important;
+  padding: 14px 12px !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  font-style: normal !important;
+  color: $rhino100 !important;
+  width: 100% !important;
+  display: block !important;
+  -webkit-appearance: none !important;
+}
+
+.select2-choice:hover {
+  border: 1px solid $rhino40 !important;
+}
+
+.select2-choice:focus {
+  border: 1px solid $teal !important;
+  outline: none !important;
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
+.select2-drop-active {
+  border: 1px solid $rhino20 !important;
+  border-top: 0 !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  box-shadow: none !important;
+}
+
+.select2-arrow {
+  top: 10px !important;
+}
+
+.paste {
+  margin-top: 8px !important;
+}
+
+.accessible a#add_education {
+  margin-bottom: 24px !important;
+  margin-left: 0 !important;
+}
+
+#main_fields div.field input[type='text'],
+#main_fields div.field textarea {
+  width: 100% !important;
+}
+
+.accessible input.year {
+  margin-top: 10px !important;
+}
+
+#custom_fields label a {
+  color: $teal !important;
+  text-decoration: none !important;
+}
+
+.select2-container .select2-choice span {
+  color: $rhino100 !important;
+}
+
+#disability_status_header {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+#education_section {
+  position: relative !important;
+}
+
+.remove-background-field {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+}
+
+#submission_received {
+  padding: 32px 16px;
+  background-color: #fff;
+}
+
+@include sm {
+  #submission_received {
+    padding: 32px;
+  }
+}
+
+#submission_received #view-more,
+#submission_received #back_to_application_link#back_to_application_link {
+  display: none !important;
+}
+
+#submission_received h1 {
+  font-size: 26px;
+  line-height: 38px;
+}
+
+#submission_received p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.locate-me {
+  margin-top: 16px !important;
+  font-family: $fontFamilySecondary !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+}
+
+.progress-bar .upload .progress {
+  border: 1px solid #d7d8d9;
+}
+
+.progress-bar .upload .progress .bar {
+  background-color: $darkCerulean;
+}
+
+.cancel img,
+.attach-or-paste a.remove {
+  margin-left: 12px;
+}
+
+#resume_filename,
+#cover_letter_filename,
+div[data-messages='uploaders'] {
+  font-family: $fontFamilySecondary !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  color: $rhino100 !important;
+  margin-right: 0 !important;
+  margin-bottom: 8px !important;
+  text-align: left !important;
+  float: none !important;
+}

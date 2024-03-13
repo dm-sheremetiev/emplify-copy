@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="307.431" height="213.209" viewBox="0 0 307.431 213.209">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#04699b"/>
+      <stop offset="1" stop-color="#6abae8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#485daa" stop-opacity="0.502"/>
+      <stop offset="1" stop-color="#6abae8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="-0.174" x2="0.114" y2="1.037" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-0.061" y1="-0.327" x2="0.769" y2="0.809" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#485daa"/>
+      <stop offset="1" stop-color="#abe0f9"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0 0.9)">
+    <g transform="translate(39.905 0)" opacity="0.665">
+      <path d="M453.6,248.109h7.6V240.5a36.923,36.923,0,0,1,36.812-36.818h.083A36.923,36.923,0,0,1,534.916,240.5v7.611h7.595a36.923,36.923,0,0,1,36.818,36.818h0a36.923,36.923,0,0,1-36.818,36.818H453.6a36.923,36.923,0,0,1-36.812-36.818h0A36.923,36.923,0,0,1,453.6,248.109Z" transform="translate(-416.79 -109.436)" fill="url(#linear-gradient)"/>
+      <path d="M330.029,148.5h9.991V138.5A48.569,48.569,0,0,1,388.445,90.08h.111A48.569,48.569,0,0,1,436.981,138.5V148.5h9.991A48.569,48.569,0,0,1,495.4,196.92h0a48.569,48.569,0,0,1-48.425,48.425H330.029a48.569,48.569,0,0,1-48.4-48.425h0A48.569,48.569,0,0,1,330.029,148.5Z" transform="translate(-227.87 -78.522)" fill="url(#linear-gradient-2)"/>
+      <path d="M316.656,119.936h0a5.6,5.6,0,0,1,7.888,0l.816.816.816-.816a5.6,5.6,0,0,1,7.888,0h0a5.6,5.6,0,0,1,0,7.888l-.816.816-7.888,7.888-7.888-7.888h0l-.816-.816a5.6,5.6,0,0,1,0-7.888Z" transform="translate(-269.878 -88.318)" fill="none" stroke="#a9e0fa" stroke-miterlimit="10" stroke-width="1.64" opacity="0.511"/>
+      <path d="M323.011,237h0a18.754,18.754,0,0,1,18.695,18.7v3.853h3.859a18.754,18.754,0,0,1,18.695,18.7h0a18.747,18.747,0,0,1-18.695,18.695H304.31V259.534h0v-3.853A18.76,18.76,0,0,1,323.011,237Z" transform="translate(-125.709 -121.164)" fill="#69bae8" opacity="0.746"/>
+      <path d="M475.821,199.643h0a2.808,2.808,0,0,0-3.955,0l-.409.409-.409-.409a2.808,2.808,0,0,0-3.955,0h0a2.8,2.8,0,0,0,0,3.955l.409.409,3.974,3.945,3.955-3.959h0l.409-.409a2.8,2.8,0,0,0-.019-3.94Z" transform="translate(-334.836 -107.624)" fill="none" stroke="#a9e0fa" stroke-miterlimit="10" stroke-width="1.64" opacity="0.558"/>
+      <path d="M482.588,346.736h0a3.853,3.853,0,0,0-5.426,0l-.561.562-.562-.562a3.853,3.853,0,0,0-5.426,0h0a3.853,3.853,0,0,0,0,5.433l.555.555,5.433,5.433,5.426-5.433h0l.562-.555A3.866,3.866,0,0,0,482.588,346.736Z" transform="translate(-334.565 -159.505)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.23" opacity="0.593"/>
+      <path d="M352.675,288.24a26.55,26.55,0,0,1,26.472,26.472h0a26.55,26.55,0,0,1-26.472,26.472H347.21V288.24Z" transform="translate(-171.277 -136.147)" opacity="0.533" fill="url(#linear-gradient-3)"/>
+      <path d="M505.337,72.38h-.163a60.074,60.074,0,0,0-59.944,59.983" transform="translate(-350.355 -72.38)" fill="none" stroke="#485daa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" opacity="0.717"/>
+      <path d="M445.47,96" transform="translate(-289.314 -80.576)" fill="none" stroke="#707070" stroke-miterlimit="10" stroke-width="3.28"/>
+    </g>
+    <path d="M665.917,332.33h0a14.935,14.935,0,0,0-14.9,14.891V350.3h-3.071a14.935,14.935,0,0,0-14.891,14.891h0a14.935,14.935,0,0,0,14.891,14.891H680.8V350.3h0v-3.076A14.935,14.935,0,0,0,665.917,332.33Z" transform="translate(-633.06 -224.31)" fill="#194173" opacity="0.106"/>
+    <path d="M704.417,373.81A21.149,21.149,0,0,0,683.33,394.9h0a21.149,21.149,0,0,0,21.087,21.087h4.35V373.819Z" transform="translate(-661.018 -246.293)" opacity="0.653" fill="url(#linear-gradient-4)"/>
+  </g>
+</svg>

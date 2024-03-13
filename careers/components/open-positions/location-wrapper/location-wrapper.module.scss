@@ -1,0 +1,36 @@
+@import '@/careers/styles/media-queries';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/modules/picture.module.scss';
+
+.locationWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.locationImg {
+  composes: picture;
+  display: block;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+
+  @include md {
+    margin: initial;
+    position: absolute;
+    right: -90px;
+    top: 64px;
+    max-width: 50%;
+  }
+
+  @include lg {
+    right: -42px;
+    top: 64px;
+    max-width: 35%;
+  }
+
+  @include xl {
+    right: -219px;
+    top: 0;
+  }
+}

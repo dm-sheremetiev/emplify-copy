@@ -1,0 +1,262 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.berlin {
+  @include md {
+    display: block;
+    transform: translate(-15px, 38px);
+  }
+
+  @include lg {
+    transform: translate(-15px, 56px);
+  }
+
+  @include xl {
+    transform: translate(-15px, 71px);
+  }
+}
+
+.brno {
+  @include md {
+    display: block;
+    transform: translate(23px, 87px);
+  }
+
+  @include lg {
+    transform: translate(36px, 118px);
+  }
+
+  @include xl {
+    transform: translate(50px, 151px);
+  }
+}
+
+.dubai {
+  @include md {
+    display: block;
+    transform: translate(92px, 159px);
+  }
+
+  @include lg {
+    transform: translate(130px, 217px);
+  }
+
+  @include xl {
+    transform: translate(168px, 273px);
+  }
+}
+
+.london {
+  @include md {
+    display: block;
+    transform: translate(-104px, 53px);
+  }
+
+  @include lg {
+    transform: translate(-134px, 72px);
+  }
+
+  @include xl {
+    transform: translate(-166px, 91px);
+  }
+}
+
+.mexico-city {
+  @include md {
+    display: block;
+    transform: translate(-255px, 183px);
+  }
+
+  @include lg {
+    transform: translate(-333px, 248px);
+  }
+
+  @include xl {
+    transform: translate(-420px, 315px);
+  }
+}
+
+.milan {
+  @include md {
+    display: block;
+    transform: translate(-43px, 121px);
+  }
+
+  @include lg {
+    transform: translate(-22px, 171px);
+  }
+
+  @include xl {
+    transform: translate(-62px, 208px);
+  }
+}
+
+.munich {
+  @include md {
+    display: block;
+    transform: translate(-25px, 103px);
+  }
+
+  @include lg {
+    transform: translate(-28px, 142px);
+  }
+
+  @include xl {
+    transform: translate(-31px, 178px);
+  }
+}
+
+.new-york {
+  @include md {
+    display: block;
+    transform: translate(-195px, 140px);
+  }
+
+  @include lg {
+    transform: translate(-255px, 187px);
+  }
+
+  @include xl {
+    transform: translate(-320px, 237px);
+  }
+}
+
+.paris {
+  @include md {
+    display: block;
+    transform: translate(-77px, 82px);
+  }
+
+  @include lg {
+    transform: translate(-99px, 112px);
+  }
+
+  @include xl {
+    transform: translate(-120px, 140px);
+  }
+}
+
+.pilsen {
+  @include md {
+    display: block;
+    transform: translate(-8px, 76px);
+  }
+
+  @include lg {
+    transform: translate(3px, 99px);
+  }
+
+  @include xl {
+    transform: translate(6px, 123px);
+  }
+}
+
+.prague {
+  @include md {
+    display: block;
+    transform: translate(2px, 57px);
+  }
+
+  @include lg {
+    transform: translate(8px, 77px);
+  }
+
+  @include xl {
+    transform: translate(14px, 98px);
+  }
+}
+
+.sao-paulo {
+  @include md {
+    display: block;
+    transform: translate(-141px, 285px);
+  }
+
+  @include lg {
+    transform: translate(-186px, 385px);
+  }
+
+  @include xl {
+    transform: translate(-228px, 486px);
+  }
+}
+
+.singapore {
+  @include md {
+    display: block;
+    transform: translate(199px, 209px);
+  }
+
+  @include lg {
+    transform: translate(274px, 283px);
+  }
+
+  @include xl {
+    transform: translate(347px, 357px);
+  }
+}
+
+.sydney {
+  @include md {
+    display: block;
+    transform: translate(303px, 277px);
+  }
+
+  @include lg {
+    transform: translate(414px, 375px);
+  }
+
+  @include xl {
+    transform: translate(524px, 473px);
+  }
+}
+
+.toronto {
+  @include md {
+    display: block;
+    transform: translate(-221px, 127px);
+  }
+
+  @include lg {
+    transform: translate(-282px, 172px);
+  }
+
+  @include xl {
+    transform: translate(-364px, 218px);
+  }
+}
+
+.montreal {
+  @include md {
+    display: block;
+    transform: translate(-221px, 127px);
+  }
+
+  @include lg {
+    transform: translate(-300px, 172px);
+  }
+
+  @include xl {
+    transform: translate(-300px, 205px);
+  }
+}
+
+.columbus {
+  @include md {
+    display: block;
+    transform: translate(-180px, 115px);
+  }
+
+  @include lg {
+    transform: translate(-240px, 155px);
+  }
+
+  @include xl {
+    transform: translate(-410px, 220px);
+  }
+}
+
+.undefined {
+  display: none;
+}

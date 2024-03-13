@@ -1,0 +1,17 @@
+{
+  "name": "ptt-import-to-contentful",
+  "version": "1.0.0",
+  "description": "",
+  "main": "csv-to-json-parser.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "3.12.0",
+    "contentful-management": "10.39.2",
+    "moment": "^2.29.4"
+  }
+}

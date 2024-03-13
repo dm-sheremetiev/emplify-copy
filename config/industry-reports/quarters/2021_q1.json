@@ -1,0 +1,204 @@
+{
+  "quarter": {
+    "y": 2021,
+    "q": 1
+  },
+  "missingReports": [
+    {
+      "region": "benelux",
+      "industry": "accommodation"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "airlines"
+    },
+    {
+      "region": "brazil",
+      "industry": "airlines"
+    },
+    {
+      "region": "united-kingdom",
+      "industry": "airlines"
+    },
+    {
+      "region": "france",
+      "industry": "airlines"
+    },
+    {
+      "region": "dach",
+      "industry": "airlines"
+    },
+    {
+      "region": "cee-turkey",
+      "industry": "airlines"
+    },
+    {
+      "region": "benelux",
+      "industry": "airlines"
+    },
+    {
+      "region": "middle-east",
+      "industry": "airlines"
+    },
+    {
+      "region": "africa",
+      "industry": "airlines"
+    },
+    {
+      "region": "latin-america",
+      "industry": "airlines"
+    },
+    {
+      "region": "latin-america-excl-br-mx",
+      "industry": "airlines"
+    },
+    {
+      "region": "mexico",
+      "industry": "airlines"
+    },
+    {
+      "region": "north-america",
+      "industry": "airlines"
+    },
+    {
+      "region": "southern-europe",
+      "industry": "airlines"
+    },
+    {
+      "region": "benelux",
+      "industry": "alcohol"
+    },
+    {
+      "region": "middle-east",
+      "industry": "alcohol"
+    },
+    {
+      "region": "france",
+      "industry": "auto"
+    },
+    {
+      "region": "benelux",
+      "industry": "beauty"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "beverages"
+    },
+    {
+      "region": "france",
+      "industry": "beverages"
+    },
+    {
+      "region": "benelux",
+      "industry": "beverages"
+    },
+    {
+      "region": "mexico",
+      "industry": "beverages"
+    },
+    {
+      "region": "benelux",
+      "industry": "electronics"
+    },
+    {
+      "region": "benelux",
+      "industry": "fashion"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "finance"
+    },
+    {
+      "region": "united-kingdom",
+      "industry": "finance"
+    },
+    {
+      "region": "benelux",
+      "industry": "finance"
+    },
+    {
+      "region": "mexico",
+      "industry": "finance"
+    },
+    {
+      "region": "benelux",
+      "industry": "fmcg-food"
+    },
+    {
+      "region": "dach",
+      "industry": "retail-food"
+    },
+    {
+      "region": "benelux",
+      "industry": "retail-food"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "telecom"
+    },
+    {
+      "region": "brazil",
+      "industry": "telecom"
+    },
+    {
+      "region": "united-kingdom",
+      "industry": "telecom"
+    },
+    {
+      "region": "france",
+      "industry": "telecom"
+    },
+    {
+      "region": "dach",
+      "industry": "telecom"
+    },
+    {
+      "region": "benelux",
+      "industry": "telecom"
+    },
+    {
+      "region": "mexico",
+      "industry": "telecom"
+    },
+    {
+      "region": "north-america",
+      "industry": "telecom"
+    },
+    {
+      "region": "southern-europe",
+      "industry": "telecom"
+    },
+    {
+      "region": "australia-new-zealand",
+      "industry": "travel"
+    },
+    {
+      "region": "brazil",
+      "industry": "travel"
+    },
+    {
+      "region": "france",
+      "industry": "travel"
+    },
+    {
+      "region": "dach",
+      "industry": "travel"
+    },
+    {
+      "region": "benelux",
+      "industry": "travel"
+    },
+    {
+      "region": "africa",
+      "industry": "travel"
+    },
+    {
+      "region": "mexico",
+      "industry": "travel"
+    },
+    {
+      "region": "southern-europe",
+      "industry": "travel"
+    }
+  ]
+}

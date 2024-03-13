@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+    <title>icon-8-arrow-down-grey</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="a" points="1.6667 11 4.5334 8 1.6667 5 2.6667 4 6.3333 8 2.6667 12"/>
+    </defs>
+    <g fill-rule="evenodd">
+        <mask fill="white">
+            <use xlink:href="#a"/>
+        </mask>
+        <use transform="translate(4 8) rotate(90) translate(-4 -8)" fill="#A6AEB8" fill-rule="nonzero" xlink:href="#a"/>
+    </g>
+</svg>

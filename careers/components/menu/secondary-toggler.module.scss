@@ -1,0 +1,65 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.secondaryToggler {
+  display: none;
+}
+
+.checkbox {
+  display: none;
+}
+
+.labelInner {
+  position: relative;
+  padding-right: 7px;
+
+  @include mainNavDesktop {
+    padding-right: 19px;
+  }
+
+  &:after {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    content: '';
+    background: url('assets/icon-12-plus.svg') no-repeat center right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-10px, -50%);
+
+    @include mainNavDesktop {
+      width: 8px;
+      height: 16px;
+      margin-left: 13px;
+      background-image: url('assets/icon-8-arrow-down-grey.svg');
+      position: static;
+      transform: none;
+    }
+  }
+}
+
+.checkbox:checked {
+  ~ .navigation {
+    display: block;
+    @include mainNavDesktop {
+      display: flex;
+    }
+  }
+
+  ~ .label .labelInner::after {
+    background-image: url('assets/icon-12-minus.svg');
+
+    @include mainNavDesktop {
+      background-image: url('assets/icon-8-arrow-down-grey.svg');
+    }
+  }
+}
+
+// hack
+@media (max-width: #{$mainNavDesktop}) {
+  .checkbox:not(:checked) ~ .label .labelInner:hover {
+    color: unset;
+  }
+}

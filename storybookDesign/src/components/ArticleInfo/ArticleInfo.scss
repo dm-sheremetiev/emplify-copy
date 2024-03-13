@@ -1,0 +1,46 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-article-info {
+	width: 100%;
+
+	.typography.typography--Headline2 {
+		color: $astronautBlue;
+	}
+
+	.typography.typography--Body1 {
+		margin-top: 20px;
+		color: $doveGray;
+	}
+}
+
+.emplifi-article-info-group {
+	padding-top: 110px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 60px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__container {
+		max-width: 992px;
+	}
+
+	.emplifi-article-info {
+		padding-top: 11.25px;
+		padding-bottom: 11.25px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.emplifi-article-info-group {
+		padding-top: 150px;
+		padding-bottom: 130px;
+
+		.emplifi-article-info {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+}

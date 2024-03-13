@@ -1,0 +1,37 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.external {
+  @include fontSize(15, 14);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+  cursor: pointer;
+  text-decoration: none;
+
+  @include mainNavDesktop {
+    padding: 28px 0;
+    height: 100%;
+  }
+
+  &,
+  &:visited {
+    color: #414142;
+  }
+
+  &:hover {
+    color: $rhino100;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 24px;
+    padding-left: 20px;
+    background: url('assets/open-in-new.svg') right center no-repeat;
+  }
+}

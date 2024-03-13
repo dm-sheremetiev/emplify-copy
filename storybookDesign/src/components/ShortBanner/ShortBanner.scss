@@ -1,0 +1,92 @@
+@import './src/assets/scss/variables/index';
+@import './src/assets/scss/placeholders/index';
+
+.emplifi-short-header {
+	position: relative;
+	background-color: $wildSand;
+	&__image{
+		width: 100%;
+	}
+
+	// Variants
+	&--type-Resource {
+		.emplifi-short-header__image-container {
+			margin-bottom: $spacing-md * -1;
+
+			@media (min-width: $mq-768) {
+				align-self: end;
+				margin-bottom: $spacing-xl * -1;
+				margin-top: $spacing-sm;
+			}
+		}
+	}
+	&--type-campaign {
+		background-color: transparent;
+		.emplifi-short-header__container {
+			grid-row-gap: $spacing-xs;
+			grid-template-areas: "tIMAGE" "tCONT";
+			padding: $spacing-sm;
+			@media (min-width: $mq-768) {
+				grid-template-areas: "tCONT tIMAGE";
+				padding-top: $spacing-sm;
+				padding-bottom: $spacing-sm;
+			}
+		}
+		.emplifi-short-header__info {
+			align-self: center;
+		}
+		.emplifi-short-header__image-container {
+			margin-bottom: 0;
+			@media (min-width: $mq-768) {
+				align-self: end;
+				margin-bottom: $spacing-sm * -1;
+			}
+		}
+		.typography--Headline1 {
+			@extend %text-style-h3;
+		}
+	}
+	// Named objects
+	&__container {
+		display: grid;
+		grid-row-gap: $spacing-md;
+		grid-template-areas: "tCONT" "tIMAGE";
+		padding: $spacing-md $spacing-sm;
+		position: relative;
+		margin: 0 auto;
+		max-width: $max-width-content;
+		@media (min-width: $mq-768) {
+			grid-template-areas: "tCONT tIMAGE";
+			grid-template-columns: 50% 1fr;
+			padding-top: $spacing-xl;
+			padding-bottom: $spacing-xl;
+		}
+		@media (min-width: $mq-1024) {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+	&__info {
+		grid-area: tCONT;
+		z-index: 1;
+	}
+	&__image-container {
+		grid-area: tIMAGE;
+	}
+
+	.typography--Headline1 {
+		color: $chathamsBlue;
+		margin-bottom: calc(1ex * 0.5);
+	}
+
+	.typography--Body1 {
+		color: $doveGray;
+	}
+
+	.emplifi-button {
+		margin-top: $spacing-sm;
+		@media (min-width: $mq-768) {
+			margin-top: $spacing-md;
+		}
+	}
+}

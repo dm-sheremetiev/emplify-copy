@@ -1,0 +1,34 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+
+  @media (min-width: 768px) {
+    width: 26px;
+    height: 26px;
+    background-size: 26px;
+  }
+
+  &.checkIcon {
+    background-image: url('assets/check-icon.svg');
+  }
+
+  &.xIcon {
+    background-image: url('assets/x-icon.svg');
+  }
+}
+
+.infoIcon {
+  pointer-events: none;
+  display: inline-block;
+  position: relative;
+  left: 7px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background: url('assets/info-icon.svg')
+  no-repeat 0 0;
+}

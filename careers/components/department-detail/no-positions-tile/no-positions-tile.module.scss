@@ -1,0 +1,33 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.container {
+  position: relative;
+  background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include md {
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  p {
+    max-width: 550px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include md {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  a {
+    color: $teal;
+  }
+}

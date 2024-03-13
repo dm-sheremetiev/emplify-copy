@@ -1,0 +1,119 @@
+.input {
+  border: 1px solid #fff;
+  background-color: #0000004A;
+  height: 50px;
+  font-weight: 400;
+  border-radius: 2px;
+  font-style: normal;
+  color: #fff;
+  letter-spacing: -0.45px;
+  opacity: 0.64;
+  width: 100%;
+  display: block;
+  appearance: none;
+  padding: 0 26px;
+  font-size: 18px;
+  line-height: 30px;
+
+  &[type='text']:focus ~ p {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.inputGroup {
+  text-align: left;
+  margin-bottom: 28px;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 992px) {
+    margin-bottom: 32px;
+  }
+
+  &.withIcon {
+    display: flex;
+
+    img {
+      margin-right: 16px;
+      width: 30px;
+
+      @media (min-width: 768px) {
+        width: 48px;
+      }
+    }
+  }
+
+  &:focus {
+    border: 1px solid #a30c65;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: #fff;
+    }
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #fff;
+      //opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #fff;
+      //opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #fff;
+    }
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #fff;
+    }
+  }
+
+  &[disabled] {
+   // opacity: 0.25;
+    cursor: not-allowed;
+  }
+
+  select {
+    width: 100%;
+    border: 1px solid rgb(210, 214, 220);
+    padding: 10px 32px 10px 26px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.45px;
+    opacity: 0.64;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAABHNCSVQICAgIfAhkiAAAAIBJREFUKFNj/P///wUGBob/QOzIyMj4AUjjBUD1BkAF+4F4ISNUsz6QAzIErwFIGgWAaieCNIMYB4AYrwFoGhcCXZnACHIjIQOwaQTpA2vGZwAujSiacRhQCBRfD8Qgr4GdihyacJtxuAAmjKERw2YcBmDViFMzkhcSgE6dgCviAfXISyQVr5xBAAAAAElFTkSuQmCC) right 12px center no-repeat #0000004A;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+}
+
+.error {
+  position: relative;
+
+  input,
+  select {
+    border: 1px solid #c6140a;
+
+    &:focus + label {
+      color: #c6140a;
+    }
+  }
+
+  span {
+    color: #c6140a;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-top: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    font-size: 14px;
+  }
+}

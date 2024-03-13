@@ -1,0 +1,81 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.dot {
+  display: none;
+
+  @include md {
+    transition: $defaultTransition;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 22px;
+    height: 22px;
+    margin-right: 2px;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    background-color: transparent;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    transition: $defaultTransition;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:after {
+    background-color: $brandRoyal;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+  }
+}
+
+.listItem {
+  background-color: #fff;
+  transition: $defaultTransition;
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+    @include md {
+      box-shadow: none;
+    }
+
+    .dot {
+      @include md {
+        background-color: rgba(102, 109, 233, 0.1);
+      }
+
+      &:before {
+        background-color: rgba(102, 109, 233, 0.25);
+      }
+    }
+
+    a {
+      color: $brandRoyal;
+
+      &:after {
+        transform: translate(3px, -50%) rotate(-135deg);
+      }
+    }
+  }
+
+  @include md {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: none;
+  }
+}

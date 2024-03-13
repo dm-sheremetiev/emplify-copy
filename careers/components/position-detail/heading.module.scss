@@ -1,0 +1,13 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.heading {
+  @include fontSize(26, 38);
+  font-weight: 500;
+  color: #000;
+
+  @include md {
+    @include fontSize(42, 60);
+  }
+}

@@ -1,0 +1,16 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.breadcrumb {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-family: $fontFamilySecondary;
+  text-transform: uppercase;
+  display: inline-block;
+
+  &,
+  &:any-link {
+    color: $rhino60;
+  }
+}

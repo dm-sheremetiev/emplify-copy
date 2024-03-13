@@ -1,0 +1,59 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 282px;
+  position: relative;
+
+  @include lg {
+    max-width: 275px;
+  }
+
+  @include xl {
+    max-width: 327px;
+  }
+
+  figcaption {
+    text-align: center;
+    color: $rhino100;
+    padding: 0 33px;
+
+    @include md {
+      position: relative;
+      padding: 0 24px;
+      z-index: 1;
+    }
+
+    @include lg {
+      padding: 0 32px;
+    }
+  }
+
+  q {
+    font-family: $fontFamilySecondary;
+    margin-bottom: 32px;
+    display: inline-block;
+    @include fontSize(16, 26);
+
+    @include md {
+      margin-bottom: 24px;
+    }
+
+    @include lg {
+      @include fontSize(18, 30);
+    }
+  }
+
+  p {
+    font-weight: 600;
+    opacity: 0.8;
+  }
+
+  span {
+    opacity: 0.8;
+  }
+}

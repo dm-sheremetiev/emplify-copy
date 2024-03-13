@@ -1,0 +1,20 @@
+{
+    "spaceId": "cpumif18y1gd",
+    "environmentId": "moga-dev",
+    "managementToken": "CFPAT-34rXN61Jw2fbfJzkuZeyoJbogdPNU46HeNbKjc1Ibsk",
+    "saveFile": true,
+    "contentFile": "mega-menu-sub-menus-content-export.json",
+    "includeDrafts": true,
+    "skipContentModel": true,
+    "skipContent": false,
+    "skipRoles": true,
+    "skipWebhooks": true,
+    "contentOnly": true,
+    "queryEntries": [
+      "content_type=uiMegaMenuSubMenu"
+    ],
+    "queryAssets": [
+        "fields.title=***************"
+    ],
+    "downloadAssets": false
+  }

@@ -1,0 +1,126 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.wysiwygStyles {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: left !important;
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+    @include fontSize(30, 42);
+    font-weight: 500;
+
+    @include md {
+      @include fontSize(42, 60);
+    }
+  }
+
+  h2 {
+    margin-bottom: 24px;
+    @include fontSize(26, 38);
+    font-weight: 500;
+
+    @include md {
+      @include fontSize(36, 52);
+    }
+  }
+
+  h3 {
+    margin-bottom: 18px;
+    @include fontSize(24, 34);
+    font-weight: 500;
+
+    @include md {
+      @include fontSize(28, 40);
+    }
+  }
+
+  h4 {
+    margin-bottom: 18px;
+    @include fontSize(20, 34);
+    font-weight: 500;
+  }
+
+  h5 {
+    margin-bottom: 18px;
+    @include fontSize(16, 26);
+    font-weight: 500;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  pre {
+    white-space: normal;
+    margin-bottom: 12px;
+    font-family: monospace;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  ul,
+  ol {
+    margin-left: 34px;
+    margin-bottom: 48px;
+
+    @include md {
+      margin-bottom: 64px;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 0;
+      padding-top: 12px;
+    }
+  }
+
+  li {
+    position: relative;
+    @include fontSize(16, 26);
+    font-family: $fontFamilySecondary;
+
+    &:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      top: 7px;
+      left: -34px;
+      background-color: $jazzberryJam;
+    }
+  }
+
+  a {
+    position: relative;
+    color: $teal;
+    border-bottom: 1px solid $rhino20;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+}

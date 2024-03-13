@@ -1,0 +1,28 @@
+declare const colours: {
+    white: string;
+    black: string;
+    pictonBlue: string;
+    sanMarino: string;
+    astronautBlue: string;
+    abbey: string;
+    curiousBlue: string;
+    sail: string;
+    persianGreen: string;
+    seagull: string;
+    sinbad: string;
+    bahamaBlue: string;
+    chathamsBlue: string;
+    jazzberryJam: string;
+    gallery: string;
+    silver: string;
+    dustyGray: string;
+    doveGray: string;
+    shipGray: string;
+    wildSand: string;
+    biscay: string;
+    tealBlue: string;
+    mediumRedViolet: string;
+    mineShaft: string;
+};
+export { colours };
+export default colours;

@@ -1,0 +1,61 @@
+// kon-0095
+
+.emplifi-hero-area--campaign {
+	border-top: 1px solid #eee;
+	padding: $spacing-md 0;
+	margin: 0 auto;
+	max-width: $max-width-page;
+	// .emplifi-hero-area__content {
+	// 	@media (min-width: $mq-768) {
+	// 		margin-top: 0;
+	// 	}
+	// }
+	@media (min-width: $mq-768) {
+		.emplifi-hero-area__image-container + .emplifi-hero-area__content {
+			// margin-top: $spacing-md;
+			// margin-bottom: $spacing-md;
+			max-width: 70%;
+		}
+	}
+}
+
+.emplifi-icon-feature-group--campaign .emplifi-icon-feature-group__header {
+	font-size: 26px;
+	line-height: 1.3;
+}
+
+.emplifi-icon-feature-group--campaign {
+	text-align: center;
+	.emplifi-icon-feature__title {
+		color: $abbey;
+		font-size: 18px;
+	}
+}
+
+// Double class for specificity
+.emplifi-resources.emplifi-resources--campaign {
+	background-color: transparent !important;
+	padding: $spacing-sm;
+	margin: $spacing-sm 0;
+
+	.emplifi-resource-alt-card__content {
+		margin: $spacing-xs $spacing-xs $spacing-sm $spacing-xs;
+		padding: 0;
+		text-align: center;
+		> a {
+			margin: 0 auto;
+		}
+	}
+	.emplifi-resource-alt-card__inner {
+		border: 1px solid $silver;
+	}
+	.emplifi-button {
+		margin: $spacing-sm auto 0;
+		@media (min-width: $mq-768) {
+			margin: $spacing-md auto 0;
+		}
+	}
+	.emplifi-resource-alt-card__title-paragraph .typography--MenuSubMenuBody {
+		font-size: 24px;
+	}
+}

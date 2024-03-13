@@ -1,0 +1,384 @@
+{
+  "tags": [
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "cpumif18y1gd"
+          }
+        },
+        "id": "30VGCDZMBpndKQ0LSlS9MH",
+        "type": "Entry",
+        "createdAt": "2022-02-08T03:39:32.753Z",
+        "updatedAt": "2022-02-10T05:48:46.749Z",
+        "environment": {
+          "sys": {
+            "id": "moga-dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 10,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "uiMegaMenuSubMenu"
+          }
+        }
+      },
+      "fields": {
+        "navigationTitle": {
+          "en": "Products"
+        },
+        "title": {
+          "en": "Emplifi CX Cloud "
+        },
+        "abstract": {
+          "en": "Emplifi gives you everything a modern enterprise needs to close the CX gap."
+        },
+        "ctaLink": {
+          "en": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "4CoCdKCLcfPq3D8R1cxRqi"
+            }
+          }
+        },
+        "subMenuColumns": {
+          "en": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4EvSt0W6fAGDYTIu97Qvyr"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5sqYx5Bhjn9GXOJdAnlvxJ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4qfKKNFXRN4yKHR6ZNs6iZ"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "cpumif18y1gd"
+          }
+        },
+        "id": "6GQj3Oc3v4A6iJwYUG6Ugl",
+        "type": "Entry",
+        "createdAt": "2022-02-10T04:38:01.402Z",
+        "updatedAt": "2022-02-10T04:41:01.512Z",
+        "environment": {
+          "sys": {
+            "id": "moga-dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "uiMegaMenuSubMenu"
+          }
+        }
+      },
+      "fields": {
+        "navigationTitle": {
+          "en": "Customer Stories"
+        },
+        "title": {
+          "en": "Customer success stories"
+        },
+        "abstract": {
+          "en": "Emplifi is helping global brands and agencies transform marketing, commerce, and care experiences, and achieve business results."
+        },
+        "ctaLink": {
+          "en": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2aQMuVkNhrYNkhn4EkHjEp"
+            }
+          }
+        },
+        "subMenuColumns": {
+          "en": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4hAkUz1AiYPacfoQdHygb3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2dZViXtIXCu9CneraGucQN"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4OVvVcmflis3UiEu45r63O"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "cpumif18y1gd"
+          }
+        },
+        "id": "1xtcn9PJ34XTajqzmQTMmj",
+        "type": "Entry",
+        "createdAt": "2022-02-10T04:41:43.771Z",
+        "updatedAt": "2022-02-10T04:44:46.166Z",
+        "environment": {
+          "sys": {
+            "id": "moga-dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "uiMegaMenuSubMenu"
+          }
+        }
+      },
+      "fields": {
+        "navigationTitle": {
+          "en": "Resources"
+        },
+        "title": {
+          "en": "Resource center"
+        },
+        "abstract": {
+          "en": "Your resource center for everything marketing, customer service, and CX"
+        },
+        "ctaLink": {
+          "en": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1vT7UgA54gE9hbpgjGhPKo"
+            }
+          }
+        },
+        "subMenuColumns": {
+          "en": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3FfzuvsKYedFaZ868794Xt"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7hWgJfE2Z7fLy5tYLMrVex"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "pbQCJqvFm78RFJMqGcr7O"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "cpumif18y1gd"
+          }
+        },
+        "id": "6ARNDmzou5Q1nQ07507XmU",
+        "type": "Entry",
+        "createdAt": "2022-02-10T04:45:31.470Z",
+        "updatedAt": "2022-02-10T04:48:04.437Z",
+        "environment": {
+          "sys": {
+            "id": "moga-dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "uiMegaMenuSubMenu"
+          }
+        }
+      },
+      "fields": {
+        "navigationTitle": {
+          "en": "Company"
+        },
+        "title": {
+          "en": "About us"
+        },
+        "abstract": {
+          "en": "Emplifi provides brands with insights needed to empathize with customers and amplify the right experiences. "
+        },
+        "ctaLink": {
+          "en": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1Bze6BpbbdKbupIlC2Xs0h"
+            }
+          }
+        },
+        "subMenuColumns": {
+          "en": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4NCXv8b2cVmHkcTXkrrYOF"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5k64AGTTG5PGBBfEHrGZto"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2pkR2HNAsZwu3mO47BWgfu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "assets": [
+  ]
+}

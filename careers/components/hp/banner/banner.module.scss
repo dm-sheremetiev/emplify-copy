@@ -1,0 +1,105 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.wrapper {
+  padding-top: 48px;
+  padding-bottom: 300px;
+  position: relative;
+  background: url('./hero-banner.svg') $purple no-repeat 1rem bottom / 383px auto;
+
+  @include xs {
+    background-position-x: center;
+  }
+
+  @include md {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-size: 560px;
+    background-position-x: right;
+  }
+
+  @include lg {
+    background-size: calc(100% - 380px);
+    background-position: 145% center;
+  }
+
+  @include xl {
+    background-size: 787px;
+    padding-top: 96px;
+    padding-bottom: 137px;
+    background-position: calc(50% + 450px) top;
+  }
+
+  .btnWrapper {
+    margin: 0 auto;
+    text-align: center;
+
+    @include md {
+      text-align: left;
+    }
+  }
+}
+
+.header {
+  margin-bottom: 24px;
+  color: #fff;
+  text-align: center;
+
+  @include md {
+    max-width: 510px;
+    text-align: left;
+  }
+
+  @include lg {
+    max-width: 560px;
+  }
+}
+
+.perex {
+  font-family: $fontFamilySecondary;
+  @include fontSize(16, 30);
+  color: #fff;
+  margin-bottom: 32px;
+  text-align: center;
+
+  @include md {
+    @include fontSize(28, 40);
+    margin-bottom: 48px;
+    max-width: 560px;
+    text-align: left;
+  }
+}
+
+.pattern {
+  position: absolute;
+}
+
+.pattern1 {
+  z-index: 1;
+  bottom: -42px;
+  left: -196px;
+  width: 296px;
+  height: 91px;
+  border-radius: 45px;
+  background-color: #fff;
+
+  @include xl {
+    background-color: $purple;
+  }
+}
+
+.pattern2 {
+  z-index: 1;
+  bottom: -110px;
+  left: -175px;
+  width: 360px;
+  height: 137px;
+  border-radius: 68px;
+  background-color: #fff;
+  opacity: 0.6;
+
+  @include xl {
+    background-color: $purple;
+  }
+}

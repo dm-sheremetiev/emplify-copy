@@ -1,0 +1,231 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-hero-banner {
+  width: 100%;
+  background-color: $white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .emplifi-hero-banner-content {
+    display: flex;
+    flex-direction: column;
+
+    &--left,
+    &--right {
+      &.container-rounded {
+        padding: 48px 0;
+        border-radius: 40px;
+        max-width: 1200px;
+        margin: 0 24px;
+        flex-direction: column;
+
+        .emplifi-hero-banner-content__title {
+          @media (min-width: 768px) {
+            font-size: 36px;
+            line-height: 46px;
+          }
+
+          h1,
+          h2 {
+            margin-bottom: 12px;
+          }
+        }
+
+        @media (min-width: 768px) {
+          padding-right: 32px;
+          flex-direction: row;
+          margin: 0 32px;
+        }
+      }
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__image-area {
+      margin-top: 28px;
+
+      img {
+        width: 100%;
+        max-width: 949px;
+      }
+    }
+
+    &__text-area {
+      text-align: center;
+      margin-top: 40px;
+      padding-left: 36px;
+      padding-right: 36px;
+
+      .emplifi-hero-banner-content__title {
+        color: $chathamsBlue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 600;
+      }
+
+      .emplifi-hero-banner-content__sub-title {
+        color: $pictonBlue;
+        font-size: 24px;
+        line-height: 32px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+      }
+
+      .emplifi-hero-banner-content__body {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: $abbey;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &__logos-group {
+      max-width: 570px;
+      display: grid;
+      grid-template-rows: repeat(4, auto);
+      grid-template-columns: repeat(2, auto);
+      margin: 0 auto;
+      row-gap: 24px;
+
+      li {
+        img {
+          max-width: 100px;
+
+          @media (min-width: 768px) {
+            max-width: 194px;
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        column-gap: 24px;
+        grid-template-columns: repeat(3, auto);
+
+        li {
+          grid-template-columns: repeat(auto-fit, minmax(112px, 112px));
+        }
+      }
+
+      @media (min-width: 992px) {
+        column-gap: 0;
+      }
+    }
+
+    &__action-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: $spacing-sm;
+      justify-content: center;
+
+      @media (min-width: 768px) {
+        justify-content: flex-start;
+        margin-top: $spacing-md * 0.6;
+      }
+
+      a:last-child {
+        .emplifi-button {
+          margin-right: 0 !important;
+        }
+      }
+
+      .emplifi-button {
+        white-space: nowrap;
+        margin: 0 15px 15px 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .emplifi-hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .emplifi-hero-banner-content {
+      &__image-area {
+        width: 50%;
+
+        img {
+          margin: 0 0 0 auto !important;
+        }
+      }
+
+      // note: typography font should be added later
+      &__text-area {
+        margin-top: 50px;
+        width: 40%;
+        text-align: left;
+        margin-right: 5%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .emplifi-hero-banner-content__title {
+          font-size: 46px;
+          line-height: 50px;
+
+          h1 {
+            margin-bottom: 20px;
+          }
+        }
+
+        .emplifi-hero-banner-content__sub-title {
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        .emplifi-hero-banner-content__body {
+          font-size: 16px;
+          line-height: 24px;
+          margin-right: 20px;
+        }
+      }
+
+      &--right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &--left {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 961px) {
+  .emplifi-hero-banner {
+    .emplifi-hero-banner-content {
+      &__image-area {
+        width: 60%;
+        margin: 30px auto 0;
+
+        img {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}

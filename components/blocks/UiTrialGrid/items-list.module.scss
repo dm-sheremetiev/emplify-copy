@@ -1,0 +1,37 @@
+.itemsListHolder {
+  ul {
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 64px;
+    }
+
+    li {
+      background: url('assets/check-gray.svg') no-repeat 0 0;
+      background-size: 26px;
+      padding-left: 38px;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.magenta {
+    li {
+      background: url('assets/check-magenta.svg') no-repeat 0 0;
+      background-size: 26px;
+      p {
+        color: #fff;
+      }
+    }
+  }
+}

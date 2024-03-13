@@ -1,0 +1,20 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.heading {
+  margin-bottom: 48px;
+  font-weight: 500;
+
+  @include md {
+    max-width: 350px;
+    z-index: 2;
+    position: relative;
+    margin-left: 24px;
+  }
+
+  @include xl {
+    margin-top: -80px;
+    margin-left: 0;
+  }
+}

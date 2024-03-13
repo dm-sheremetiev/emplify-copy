@@ -1,0 +1,25 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /opt/emplifi/
+permissions:
+  - object: /opt/emplifi/
+    pattern: "*.sh"
+    mode: 700
+    owner: root
+    type:
+     - directory
+  - object: /opt/emplifi/
+    pattern: "*.json"
+    mode: 600
+    owner: root
+    type:
+     - directory
+hooks:
+  ApplicationStop:
+    - location: /application-stop.sh
+      timeout: 120
+  AfterInstall:
+    - location: /after-install.sh
+      timeout: 900

@@ -1,0 +1,408 @@
+@import './src/assets/scss/variables/index';
+@import './src/assets/scss/placeholders/index';
+
+.emplifi-animated-banner {
+  display: grid;
+
+  // Banner variants
+  &--buttons-only {
+    .emplifi-animated-banner__canvas {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
+
+    .emplifi-animated-banner__content {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .emplifi-animated-banner__headline {
+      margin-bottom: $spacing-xl;
+      min-height: $spacing-xl;
+
+      @media (min-width: $mq-768) {
+        margin-bottom: $spacing-lg;
+        min-height: auto;
+      }
+    }
+  }
+
+  &--has-image {
+    .emplifi-animated-banner__arrow {
+      &--left,
+      &--right {
+        @media (min-width: $mq-1024) {
+          flex-basis: Min(18%, 35vh);
+        }
+      }
+    }
+
+    .emplifi-animated-banner__canvas {
+      grid-template-areas: 'tHEAD' 'tCONT';
+      @media (min-width: $mq-1024) {
+        grid-template-areas: 'tCONT';
+      }
+    }
+
+    .emplifi-animated-banner__headline {
+      grid-area: tHEAD;
+      @media (min-width: $mq-1024) {
+        grid-area: tCONT;
+      }
+
+      &-left,
+      &-right {
+        @media (min-width: $mq-1024) {
+          max-width: calc(50% - (Min(35%, 80vh) / 2));
+        }
+      }
+    }
+  }
+
+  &--poster {
+    grid-template-rows: 70vh auto;
+
+    &.emplifi-animated-banner--has-image {
+      .emplifi-animated-banner__background {
+        height: 80%;
+        @media (min-width: $mq-768) {
+          height: auto;
+        }
+      }
+
+      .emplifi-animated-banner__canvas {
+        grid-template-rows: auto 60vh;
+        @media (min-width: $mq-1024) {
+          grid-template-rows: inherit;
+        }
+      }
+    }
+
+    .emplifi-animated-banner__image {
+      margin: 0 ($spacing-sm * -1) 0;
+
+      @media (min-width: $mq-768) {
+        height: 75vh;
+        margin: -5vh ($spacing-sm * -1) 0;
+      }
+      @media (min-width: $mq-1024) {
+        // assumes a 1:1 aspect ratio image
+        width: Min(50%, 80vh);
+      }
+      @media (min-width: $mq-1280) {
+        // assumes a 1:1 aspect ratio image
+        width: Min(40%, 80vh);
+      }
+
+      img {
+        max-height: 100%;
+      }
+    }
+  }
+
+  &--underlap {
+    margin-top: $spacing-lg * -1;
+    position: relative;
+
+    .emplifi-animated-banner__canvas {
+      padding-top: $spacing-lg;
+      z-index: -1;
+    }
+
+    .emplifi-animated-banner__headline {
+      @media (min-width: $mq-768) {
+        margin-top: $spacing-xl;
+        margin-bottom: $spacing-xl;
+      }
+    }
+  }
+
+  // Animation variants
+  &--animation-pull,
+  &--animation-push {
+    .emplifi-animated-banner__arrow {
+      &--left {
+        &::before {
+          display: none;
+        }
+      }
+
+      &--right {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &--animation-pull {
+    .emplifi-animated-banner__arrow {
+      &--left {
+        order: 2;
+      }
+
+      &--right {
+        order: 4;
+      }
+    }
+
+    .emplifi-animated-banner__arrow-spacer {
+      // display: none;
+      height: 0.25em;
+      order: 3;
+      width: 5%;
+      @media (min-width: $mq-1024) {
+        width: 10%;
+      }
+    }
+
+    .emplifi-animated-banner__headline {
+      &-left {
+        order: -1;
+      }
+
+      &-right {
+        order: 5;
+      }
+    }
+  }
+
+  &--animation-push {
+    .emplifi-animated-banner__arrow {
+      flex-grow: 0;
+
+      &--right {
+        order: 5;
+      }
+    }
+
+    .emplifi-animated-banner__arrow-spacer {
+      flex-grow: 1;
+    }
+  }
+
+  // Named objects
+  &__action-group {
+    .emplifi-button {
+      display: block;
+      margin: 0.25em auto;
+      @media (min-width: $mq-736) {
+        display: inline-block;
+        margin: 0 0.25em;
+      }
+
+      &--scroll {
+        --button-color: #{$jazzberryJam};
+
+        &:focus {
+          outline-offset: -5px;
+          outline: 1px solid currentColor;
+        }
+
+        @media (max-width: $mq-736) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    align-self: center;
+    background: {
+      image: linear-gradient($chathamsBlue, $chathamsBlue);
+      position: center bottom;
+      repeat: no-repeat;
+      size: 4px calc(100% - 0.5em);
+    }
+    display: block;
+    flex-grow: 1;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    transform: scaleX(0.5) rotate(0.1deg);
+    visibility: hidden;
+    width: 1em;
+
+    &::before,
+    &::after {
+      border: 0.5em solid transparent;
+      content: '';
+      display: block;
+      height: 0;
+      left: 0;
+      position: absolute;
+      top: -0.5em;
+      width: 0;
+    }
+
+    &::before {
+      border-bottom-color: $chathamsBlue;
+    }
+
+    &::after {
+      border-top-color: $chathamsBlue;
+      bottom: -0.5em;
+      top: auto;
+    }
+
+    @media (min-width: $mq-768) {
+      background-size: calc(100% - 0.5em) 4px;
+      height: 1em;
+      top: 0;
+      transform: scaleY(0.5) rotate(0.1deg);
+      visibility: visible;
+      width: 0;
+      &::before,
+      &::after {
+        border-color: transparent;
+        top: 0;
+      }
+      &::before {
+        border-right-color: $chathamsBlue;
+        left: -0.5em;
+      }
+      &::after {
+        border-left-color: $chathamsBlue;
+        left: auto;
+        right: -0.5em;
+      }
+    }
+
+    &--left {
+      background-position: center top;
+      @media (min-width: $mq-768) {
+        background-position: center left;
+      }
+    }
+
+    &--right {
+      @media (min-width: $mq-768) {
+        background-position: center right;
+      }
+    }
+  }
+
+  &__background {
+    align-self: end;
+    justify-self: center;
+    grid-area: tCONT;
+    margin: ($spacing-md * -1) ($spacing-sm * -1) 0;
+    max-width: $max-width-content;
+    @media (min-width: $mq-768) {
+      margin: ($spacing-md * -1) 25% 0;
+      .emplifi-animated-banner--has-image &,
+      .emplifi-animated-banner--poster & {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__canvas {
+    background-color: $wildSand;
+    grid-template-areas: 'tCONT';
+    display: grid;
+    min-height: 10em;
+    overflow: hidden;
+    padding: 0 $spacing-sm;
+
+    > * {
+      position: relative;
+      @media (min-width: $mq-1024) {
+        grid-area: tCONT;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: $spacing-xs $spacing-sm $spacing-sm $spacing-sm;
+    z-index: 1;
+  }
+
+  &__headline {
+    align-items: center;
+    align-self: stretch;
+    color: $bahamaBlue;
+    display: flex;
+    flex-direction: column;
+    grid-area: tCONT;
+    justify-content: center;
+    margin: 0 $spacing-xs * -1;
+    z-index: 1;
+    @media (min-width: $mq-768) {
+      align-self: center;
+      flex-direction: row;
+      margin: $spacing-sm $spacing-sm * -1;
+    }
+
+    &-left,
+    &-right {
+      @extend %text-style-h2;
+      display: block;
+      margin: 0.25em;
+      @media (min-width: $mq-768) {
+        margin: 0 0.125em;
+      }
+      @media (min-width: $mq-1024) {
+        max-width: 37.5%;
+      }
+    }
+
+    &-left {
+      margin-bottom: 0;
+      @media (min-width: $mq-768) {
+        margin-left: $spacing-xs;
+        margin-top: 0;
+      }
+    }
+
+    &-right {
+      margin-top: 0;
+      @media (min-width: $mq-768) {
+        margin-bottom: 0;
+        margin-right: $spacing-xs;
+      }
+    }
+  }
+
+  &__image {
+    align-self: stretch;
+    align-items: flex-end;
+    display: flex;
+    grid-area: tCONT;
+    justify-self: center;
+    max-width: $max-width-content;
+
+    @media (min-width: $mq-1024) {
+      align-self: end;
+      // set specific width to allow space for animated text
+      width: 50%;
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      position: relative;
+      width: 100%;
+      @media (min-width: $mq-768) {
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__sub-title {
+    @extend %text-style-paragraph;
+    margin-bottom: calc(1ex * 1.5);
+  }
+
+  &__title {
+    @extend %text-style-h2;
+    color: $seagull;
+    margin-bottom: calc(1ex * 1);
+  }
+}

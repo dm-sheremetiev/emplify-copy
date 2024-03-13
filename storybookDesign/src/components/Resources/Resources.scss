@@ -1,0 +1,62 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-resources {
+  padding: 45px 35px;
+
+  &__container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .typography.typography--Headline2 {
+    color: $abbey;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+
+    + .emplifi-resources__list {
+      margin-top: $spacing-sm;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: $spacing-xs;
+  }
+}
+
+@media screen and (min-width: 1264px) {
+  .emplifi-resources {
+    &__list {
+      gap: $spacing-sm;
+
+      &--center {
+        grid-template-columns: repeat(auto-fit, minmax(auto, calc((100% - 2 * #{$spacing-sm}) / 3)));
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1264px) {
+  .emplifi-resources {
+    padding: 150px 35px;
+
+    .typography.typography--Headline2 {
+      font-size: 36px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+
+      &--center {
+        // Three target columns, auto-fit if there are less subtract inner gap
+        grid-template-columns: repeat(auto-fit, minmax(auto, calc((100% - 2 * #{$spacing-xs}) / 3)));
+      }
+    }
+  }
+}

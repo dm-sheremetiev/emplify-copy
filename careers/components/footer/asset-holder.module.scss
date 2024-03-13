@@ -1,0 +1,47 @@
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.assetHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include md {
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+}
+
+.logo {
+  max-width: 119px;
+  margin-bottom: 25px;
+
+  @include md {
+    margin-bottom: 10px;
+  }
+
+  @include lg {
+    max-width: 168px;
+    margin-bottom: 12px;
+  }
+}
+
+.bgImage {
+  width: 241px;
+  height: 105px;
+  background: url('./footer-clouds.svg') no-repeat right bottom;
+  background-size: 241px;
+
+  @include md {
+    width: 450px;
+    height: 229px;
+    background-size: 450px;
+  }
+
+  @include lg {
+    width: 526px;
+    background-size: 526px;
+  }
+}

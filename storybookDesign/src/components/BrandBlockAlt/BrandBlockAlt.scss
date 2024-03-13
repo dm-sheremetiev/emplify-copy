@@ -1,0 +1,111 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-brand-block-alt {
+	padding-top: 215px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 112px;
+	margin-top: -120px;
+	background-color: $abbey;
+
+	&__container {
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	&__title-container {
+		border-bottom: 1px solid $white;
+	}
+
+	.typography.typography--Headline2 {
+		margin-bottom: 15px;
+		color: $white;
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 500;
+	}
+}
+
+.emplifi-brand-block-alt-item {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+
+	&__text {
+		color: $sail;
+		font-size: 50px;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	&__sup-text {
+	}
+
+	&__body {
+		color: $white;
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.emplifi-brand-block-alt {
+		padding-top: 379px;
+		// padding-bottom: 235px;
+		padding-bottom: 118px;
+		margin-top: -160px;
+
+		&__title-container {
+		}
+
+		.typography.typography--Headline2 {
+			margin-bottom: 50px;
+			font-size: 36px;
+			line-height: 40px;
+			text-align: center;
+		}
+
+		&__items {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: wrap;
+
+			.emplifi-brand-block-alt-item {
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.emplifi-brand-block-alt-item {
+		padding-top: 80px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 80px;
+		max-width: 517px;
+		text-align: center;
+
+		&__text {
+			font-size: 100px;
+		}
+
+		&__sup-text {
+		}
+
+		&__body {
+			font-size: 28px;
+			line-height: 34px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.emplifi-brand-block-alt {
+		&__items {
+			justify-content: space-evenly;
+		}
+	}
+}

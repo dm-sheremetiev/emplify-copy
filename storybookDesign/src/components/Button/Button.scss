@@ -1,0 +1,197 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-button {
+  font-size: 1rem;
+  padding: 10px 25px;
+  font-weight: $font-weight-bold;
+  transition: background-color 200ms ease-in;
+  color: var(--button-color);
+  background-color: var(--button-background-color, transparent);
+
+  white-space: nowrap; // to prevent wrap in buttons
+
+  &--primary,
+  &--type-Primary,
+  &--type-ProductPrimary,
+  &--type-HeaderPrimary {
+    --button-background-color: #{$jazzberryJam};
+    --button-color: #{$white};
+    --link-color: #{$white};
+
+    &:hover {
+      --button-background-color: #{$abbey};
+    }
+
+    &:focus {
+      outline-color: currentColor;
+    }
+  }
+
+  &--type-ProductPrimary {
+    background-color: $mediumRedViolet;
+  }
+
+  &--type-OutlinePrimary {
+    --button-background-color: #{transparent};
+    --button-color: #{$jazzberryJam};
+    --link-color: #{$jazzberryJam};
+    min-height: 44px;
+    border: 2px solid $jazzberryJam;
+    padding-top: 7px !important;
+
+    span {
+      color: $jazzberryJam !important;
+    }
+  }
+
+  &--secondary,
+  &--type-Secondary,
+  &--type-ProductSecondary,
+  &--type-LoadMore {
+    --button-background-color: #{$pictonBlue};
+    --button-color: #{$white};
+    --link-color: #{$white};
+
+    &:hover {
+      --button-background-color: #{$astronautBlue};
+    }
+
+    &:focus {
+      outline-color: currentColor;
+    }
+  }
+
+  &--passive {
+    --button-background-color: #{$gallery};
+    border: 1px solid $silver;
+
+    &:hover {
+      --button-background-color: #{$shipGray};
+      --button-color: #{$white};
+      --link-color: #{$white};
+    }
+
+    &:focus {
+      outline-color: currentColor;
+    }
+  }
+
+  &--type-PassiveAlt,
+  &--type-ProductPassiveAlt {
+    background-color: $gallery;
+    border: 1px solid $silver;
+
+    .emplifi-button__text.typography.typography--Button1 {
+      color: $doveGray;
+    }
+
+    &:hover {
+      background-color: $shipGray;
+
+      .emplifi-button__text.typography.typography--Button1 {
+        color: $white;
+      }
+    }
+  }
+
+  &--type-ResourceCardButton,
+  &--type-ProductPrimary,
+  &--type-ProductSecondary,
+  &--type-ProductPassiveAlt {
+    padding: 10px 25px;
+
+    .emplifi-button__text.typography.typography--Button1 {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &--type-ResourceCardButton {
+    background-color: transparent;
+    border: 1px solid $silver;
+
+    .emplifi-button__text.typography.typography--Button1 {
+      color: $chathamsBlue;
+    }
+
+    &:hover {
+      background-color: $shipGray;
+
+      .emplifi-button__text.typography.typography--Button1 {
+        color: $white;
+      }
+    }
+  }
+
+  &--type-LoadMore {
+    padding: 10px 81px;
+
+    .emplifi-button__text.typography.typography--Button1 {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &--type-CardAlt {
+    background-color: $white;
+    padding: 10px 35px 10px 35px;
+
+    .emplifi-button__text.typography.typography--Button1 {
+      color: $abbey;
+      font-size: 13px;
+    }
+
+    &:hover {
+      background-color: $abbey;
+
+      .emplifi-button__text.typography.typography--Button1 {
+        color: $white;
+      }
+    }
+  }
+
+  &__text.typography.typography--Button1 {
+    color: $white;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emplifi-button {
+    padding: 10px 32px;
+
+    &--type-ResourceCardButton,
+    &--type-ProductPrimary,
+    &--type-ProductSecondary,
+    &--type-ProductPassiveAlt {
+      padding: 10px 32px;
+
+      .emplifi-button__text.typography.typography--Button1 {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    &--type-HeaderPrimary {
+      padding: 7px 18px;
+    }
+
+    &--type-LoadMore {
+      padding: 10px 90px;
+    }
+
+    &--type-CardAlt {
+      padding: 15px 40px 15px 40px;
+
+      .emplifi-button__text.typography.typography--Button1 {
+        font-size: 18px;
+      }
+    }
+
+    &__text.typography.typography--Button1 {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}

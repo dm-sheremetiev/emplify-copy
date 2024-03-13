@@ -1,0 +1,543 @@
+@import './src/assets/scss/variables/index';
+@import './src/assets/scss/placeholders/index';
+
+.typography {
+	margin: 0;
+	&--Body1,
+	&--Body2,
+	&--Body3,
+	&--HomeHeroCop,
+	&--HomeCTACopy,
+	&--HomeCardTitle,
+	&--HomeCardCopyBold,
+	&--HomeBannerCopy,
+	&--BrandGuideH4,
+	&--BrandGuideH5,
+	&--BrandGuideCopy,
+	&--HomeTestimonialCopy,
+	&--HomeTestimonialCopyBold,
+	&--HomeTestimonialDetails,
+	&--HomeSubMenuLink,
+	&--ResourceParagraph,
+	&--Eyebrow,
+	&--MenuSubMenu3,
+	&--MenuSubMenuBody,
+	&--Link3 {
+		font-family: $font-family-secondary;
+	}
+
+	&--Headline1 {
+		@extend %text-style-h1;
+		&--mobile-type {
+			font-size: 28px;
+		}
+	}
+	&--Headline2 {
+		@extend %text-style-h2;
+		&--mobile-type {
+			font-size: 24px;
+		}
+	}
+	&--Headline3 {
+		@extend %text-style-h3;
+		&--mobile-type {
+			font-size: 22px;
+		}
+	}
+	&--Headline4 {
+		@extend %text-style-h4;
+		&--mobile-type {
+			font-size: 18px;
+		}
+	}
+	&--Headline5 {
+		@extend %text-style-h5;
+		&--mobile-type {
+			font-size: 18px;
+		}
+	}
+}
+
+.typography.typography--Caption1 {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 500;
+	&--mobile-type {
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 500;
+	}
+}
+.typography.typography--Body1 {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+}
+
+.typography.typography--Body2 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	&--mobile-type {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+	}
+}
+
+.typography.typography--Body3 {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+
+	&--mobile-type {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 400;
+	}
+}
+
+.typography.typography--Link1 {
+	font-size: 14px;
+	font-weight: 500;
+	&--mobile-type {
+		font-size: 13px;
+		font-weight: 500;
+	}
+}
+.typography.typography--Link2 {
+	font-size: 13px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 13px;
+		font-weight: 400;
+	}
+}
+.typography.typography--Link3 {
+	// font-size: 18px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+	&--mobile-type {
+		// font-size: 14px;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 17px;
+	}
+}
+.typography.typography--Button1 {
+	font-size: 16px;
+	font-weight: 600;
+	&--mobile-type {
+		font-size: 16px;
+		font-weight: 600;
+	}
+}
+.typography.typography--Button2 {
+	font-size: 13px;
+	font-weight: 600;
+	&--mobile-type {
+		font-size: 13px;
+		font-weight: 600;
+	}
+}
+.typography.typography--Label1 {
+	font-size: 13px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 13px;
+		font-weight: 400;
+	}
+}
+.typography.typography--Label2 {
+	font-size: 10px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 10px;
+		font-weight: 400;
+	}
+}
+
+//BRAND GUIDE STYLE//
+
+.typography.typography--BrandGuideH1 {
+	font-size: 46px;
+	line-height: 50px;
+	font-weight: 500;
+	&--mobile-type {
+		font-size: 28px;
+		line-height: 36px;
+		font-weight: 500;
+	}
+}
+.typography.typography--BrandGuideH2 {
+	font-size: 36px;
+	line-height: 40px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 400;
+	}
+}
+.typography.typography--BrandGuideH3 {
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 22px;
+		line-height: 32px;
+		font-weight: 400;
+	}
+}
+.typography.typography--BrandGuideH4 {
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 400;
+	text-transform: uppercase;
+	&--mobile-type {
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: 400;
+	}
+}
+.typography.typography--BrandGuideH5 {
+	font-size: 26px;
+	line-height: 36px;
+	font-weight: 600;
+	text-transform: uppercase;
+	&--mobile-type {
+		font-size: 26px;
+		line-height: 36px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}
+.typography.typography--BrandGuideCopy {
+	font-size: 24px;
+	line-height: 31px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 24px;
+		line-height: 31px;
+		font-weight: 400;
+	}
+}
+.typography.typography--BrandGuideButton {
+	font-size: 18px;
+	line-height: 36px;
+	font-weight: 600;
+	letter-spacing: -1.1px;
+	&--mobile-type {
+		font-size: 18px;
+	}
+}
+
+//HOMEPAGE STYLE//
+
+.typography.typography--HomeHeroTitle {
+	font-size: 81px;
+	line-height: 85px;
+	font-weight: 500;
+	&--mobile-type {
+		font-size: 28px;
+		line-height: 28px;
+	}
+}
+.typography.typography--HomeHeroSubTitle {
+	font-size: 65px;
+	line-height: 85px;
+	font-weight: 500;
+	letter-spacing: -1.2px;
+	&--mobile-type {
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
+.typography.typography--HomeHeroCopy {
+	font-size: 30px;
+	line-height: 38px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 13px;
+		line-height: 18px;
+	}
+}
+.typography.typography--HomeCTATitle {
+	font-size: 66px;
+	line-height: 72px;
+	font-weight: 500;
+	letter-spacing: -1.2px;
+	&--mobile-type {
+		font-size: 28px;
+		line-height: 30px;
+	}
+}
+.typography.typography--HomeCTACopy {
+	font-size: 30px;
+	line-height: 38px;
+	font-weight: 500;
+	&--mobile-type {
+		font-size: 13px;
+		line-height: 18px;
+	}
+}
+.typography.typography--HomeCardTitle {
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 600;
+	&--mobile-type {
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: 600;
+	}
+}
+.typography.typography--HomeCardCopy {
+	font-size: 26px;
+	line-height: 45px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 10px;
+		line-height: 13px;
+	}
+}
+.typography.typography--HomeCardCopyBold {
+	font-size: 26px;
+	line-height: 45px;
+	font-weight: 500;
+	&--mobile-type {
+		font-size: 10px;
+		line-height: 13px;
+	}
+}
+.typography.typography--HomeBannerTitle {
+	font-size: 66px;
+	line-height: 72px;
+	font-weight: 500;
+	&--mobile-type {
+		font-size: 26px;
+		line-height: 32px;
+	}
+}
+.typography.typography--HomeBannerCopy {
+	font-size: 46px;
+	line-height: 66px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 13px;
+		line-height: 18px;
+	}
+}
+.typography.typography--HomeTestimonialCopy {
+	font-size: 26px;
+	line-height: 34px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 10px;
+		line-height: 13px;
+	}
+}
+.typography.typography--HomeTestimonialCopyBold {
+	font-size: 26px;
+	line-height: 34px;
+	font-weight: 500;
+	&--mobile-type {
+		font-size: 10px;
+		line-height: 13px;
+	}
+}
+.typography.typography--HomeTestimonialDetails {
+	font-size: 20px;
+	line-height: 34px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 10px;
+		line-height: 13px;
+	}
+}
+
+// HEADER (MENU)
+.typography.typography--MenuSubMenuTitle {
+	font-size: 24px;
+	font-weight: 500;
+
+	&--mobile-type {
+		font-size: 18px;
+	}
+}
+
+.typography.typography--HomeSubMenuLink {
+	font-size: 20px;
+	font-weight: 500;
+
+	&--mobile-type {
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+.typography.typography--HomeMiscLink {
+	font-size: 18px;
+
+	&--mobile-type {
+		font-size: 14px;
+	}
+}
+
+.typography.typography--ProductHeaderLink {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	&--mobile-type {
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+}
+
+//FOOTER STYLE
+.typography.typography--FooterLink {
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: 500;
+  color: $white;
+	&--mobile-type {
+		font-size: 13px;
+		line-height: 13px;
+	}
+}
+.typography.typography--AltFooterLink {
+	font-size: 13px;
+	font-weight: 500;
+	&--mobile-type {
+		font-size: 13px;
+	}
+}
+.typography.typography--Copyright {
+	font-size: 10px;
+	font-weight: 400;
+	&--mobile-type {
+		font-size: 10px;
+	}
+
+	a{
+		display: inline;
+		border-bottom: 1px solid #ffffff;
+		color: #ffffff;
+	}
+}
+
+// Resources
+.typography.typography--ResourceParagraph {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+
+	&--mobile-type {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+	}
+}
+
+.typography.typography--Eyebrow {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+	&--mobile-type {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+}
+
+// NEW MEGA MENU
+.typography.typography--MenuTitle {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 12px;
+
+	&--mobile-type {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 12px;
+	}
+}
+
+.typography.typography--MenuSubMenu1 {
+	// font-size: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+
+	&--mobile-type {
+		// font-size: 18px;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px;
+	}
+}
+
+.typography.typography--MenuSubMenu2 {
+	// font-size: 18px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 36px;
+
+	&--mobile-type {
+		// font-size: 16px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 36px;
+	}
+}
+
+.typography.typography--MenuSubMenu3 {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 12px;
+
+	&--mobile-type {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 12px;
+	}
+}
+
+.typography.typography--MenuSubMenuTitle2 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 20px;
+
+	&--mobile-type {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 20px;
+	}
+}
+
+.typography.typography--MenuSubMenuBody {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+
+	&--mobile-type {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 22px;
+	}
+}
+
+.typography.typography--MenuSubMenuLink {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 36px;
+
+	&--mobile-type {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 36px;
+	}
+}

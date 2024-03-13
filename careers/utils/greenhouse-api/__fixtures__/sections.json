@@ -1,0 +1,38 @@
+{
+  "etag": "W/\"ec5eca2af9781521e964aa85660a8acf\"",
+  "sections": [
+    {
+      "id": 4000121003,
+      "name": "Didn't find the perfect job?",
+      "jobs": [
+        {
+          "absolute_url": "https://boards.greenhouse.io/socialbakers/jobs/4110105003",
+          "data_compliance": [
+            {
+              "type": "gdpr",
+              "requires_consent": false,
+              "retention_period": null
+            }
+          ],
+          "internal_job_id": null,
+          "location": {
+            "name": "Worldwide"
+          },
+          "metadata": [
+            {
+              "id": 4154730003,
+              "name": "Employment Type",
+              "value": null,
+              "value_type": "single_select"
+            }
+          ],
+          "id": 4110105003,
+          "updated_at": "2020-07-14T05:09:24-04:00",
+          "requisition_id": null,
+          "title": "Join our Talent pool",
+          "boardToken": "socialbakersdemo"
+        }
+      ]
+    }
+  ]
+}

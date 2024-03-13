@@ -1,0 +1,77 @@
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.navWrapper {
+  margin: 32px 0 48px;
+
+  @include md {
+    margin: 64px auto 96px;
+    padding: 0 10px;
+  }
+
+  @include lg {
+    padding: 0 55px;
+    margin: 96px auto;
+  }
+
+  @include xl {
+    padding: 0 100px;
+  }
+}
+
+.container {
+  list-style: none;
+
+  @include md {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.itemWrapper {
+  display: block;
+  margin-bottom: 16px;
+  width: fit-content;
+  border-bottom: 1px solid $rhino20;
+
+  @include md {
+    margin: 0 16px 32px 16px;
+  }
+
+  &:hover {
+    border-bottom: none;
+  }
+
+  &.active {
+    border-bottom: none;
+  }
+}
+
+.item {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: $fontFamilySecondary;
+
+  &,
+  &:visited {
+    color: $rhino60;
+  }
+
+  &:hover,
+  &:active {
+    color: $teal;
+    border-bottom: none;
+  }
+
+  &.active {
+    color: $rhino100;
+
+    &:hover,
+    &:active {
+      color: $rhino100;
+    }
+  }
+}

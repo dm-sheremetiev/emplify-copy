@@ -1,0 +1,25 @@
+import React, { FC, ReactNode } from 'react';
+import './HeroBanner.scss';
+export type HeroBannerProps = React.HTMLAttributes<HTMLDivElement> & {
+    id?: string;
+    title?: string;
+    subTitle?: string;
+    body?: string;
+    videoSrc?: string;
+    imgSrc?: string;
+    imgTitle?: string;
+    alt?: string;
+    isRight?: boolean;
+    className?: string;
+    buttonChildren?: ReactNode;
+    logoChildren?: ReactNode;
+    backgroundColor?: string;
+    titleColor?: string;
+    textColor?: string;
+    paddingTop?: number;
+    paddingLeft?: number;
+    paddingRight?: number;
+    paddingBottom?: number;
+};
+declare const HeroBanner: FC<HeroBannerProps>;
+export default HeroBanner;

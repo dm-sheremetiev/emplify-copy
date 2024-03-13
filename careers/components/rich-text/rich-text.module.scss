@@ -1,0 +1,29 @@
+@import '@/careers/styles/variables';
+
+.list {
+  margin-left: 34px;
+
+  li {
+    position: relative;
+    margin-bottom: 12px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      top: 8px;
+      bottom: 0;
+      left: -35px;
+      background-color: $jazzberryJam;
+    }
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

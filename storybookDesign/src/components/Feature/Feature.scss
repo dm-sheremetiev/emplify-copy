@@ -1,0 +1,72 @@
+@import './src/assets/scss/variables/index';
+@import './src/assets/scss/placeholders/index';
+
+.emplifi-icon-feature {
+  // width: 279px;
+  width: 100%;
+
+  &__icon {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: $chathamsBlue;
+    margin-bottom: calc(1ex * 1.5);
+  }
+
+  .typography--Body1,
+  p {
+    margin-bottom: 20px;
+    color: $doveGray;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.emplifi-icon-feature-group {
+  margin: 0 auto;
+  padding: $spacing-sm;
+  max-width: $max-width-content;
+
+  + .emplifi-icon-feature-group {
+    padding-top: 0;
+  }
+
+  @media (min-width: $mq-768) {
+    padding: $spacing-md $spacing-sm;
+  }
+
+  a {
+    @extend %link-style-underline; //TODO: normalize links styles
+  }
+
+  &__header {
+    color: $chathamsBlue;
+    font-size: 26px;
+    margin-bottom: $spacing-sm;
+    @media (min-width: $mq-768) {
+      text-align: center;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    justify-content: center;
+    gap: $spacing-sm;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 100%));
+
+    @media (min-width: $mq-768) {
+      // Three target columns, auto-fit if there are less
+      // Subtract inner gap for two inside columns
+      grid-template-columns: repeat(auto-fit, minmax(auto, calc((100% - #{$spacing-md}) / 3)));
+    }
+    @media (min-width: $mq-1024) {
+      gap: $spacing-md;
+      grid-template-columns: repeat(auto-fit, minmax(auto, calc((100% - #{$spacing-xl}) / 3)));
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.container {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: $headerHeight;
+
+  @include sm {
+    max-width: 542px;
+  }
+
+  @include md {
+    max-width: 752px;
+  }
+
+  @include lg {
+    max-width: 972px;
+  }
+
+  @include xl {
+    max-width: 1172px;
+  }
+
+  @include mainNavDesktop {
+    padding-top: $headerHeightDesktop;
+  }
+}

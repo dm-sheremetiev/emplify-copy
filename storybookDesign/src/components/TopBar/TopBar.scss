@@ -1,0 +1,245 @@
+@import './src/assets/scss/variables/index';
+
+.top-bar {
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 25px 13px;
+  background: linear-gradient(90deg, rgba(72,93,170,1) 42%, rgba(0,212,255,0.6) 100%);
+  overflow: hidden;
+
+  @media (min-width: $mq-768) {
+    height: 200px;
+    padding: 0 31px 0 0;
+  }
+
+  @media (min-width: $mq-992) {
+    height: 150px;
+  }
+
+  &--simplified {
+    .top-bar {
+      &__content {
+        padding-right: 24px;
+
+        @media (min-width: $mq-992) {
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+        }
+
+        @media (min-width: $mq-1280) {
+          max-width: 1028px;
+        }
+      }
+
+      &__heading {
+        font-size: 28px;
+
+        @media (min-width: $mq-768) {
+          font-size: 32px;
+          line-height: 1;
+        }
+
+        @media (min-width: $mq-992) {
+          margin-bottom: 0;
+        }
+
+        @media (min-width: $mq-1440) {
+          font-size: 48px;
+          line-height: 1;
+        }
+      }
+
+      &__paragraph {
+        margin-bottom: 32px;
+
+        @media (min-width: $mq-992) {
+          margin-bottom:0;
+          padding-right: 6px;
+        }
+
+        @media (min-width: $mq-1280) {
+          padding-right: 0;
+        }
+      }
+
+      &__wrapper {
+        width: 100%;
+      }
+    }
+  }
+
+  &__close {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    width: 32px;
+    height: 32px;
+    text-indent: -999em;
+    color: transparent;
+    border: 1px solid #fff;
+    z-index: 1;
+
+    &:before,
+    &:after {
+      position: absolute;
+      width: 2px;
+      height: 12px;
+      content: '';
+      display: inline-block;
+      background-color: #fff;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 42;
+    }
+
+    &:before {
+      transform: translateY(-50%) rotate(-45deg);
+    }
+
+    &:after {
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 24px;
+    max-width: 642px;
+
+    @media (min-width: $mq-768) {
+      margin-left: 35px;
+      padding-right: 64px;
+    }
+
+    @media (min-width: $mq-992) {
+      margin-left: 45px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 12px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (min-width: $mq-992) {
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__paragraph {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+
+    @media (min-width: $mq-992) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    a {
+      color: #a30c65;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $mq-768) {
+      flex-direction: row;
+    }
+  }
+
+  &__logo {
+    max-width: 140px;
+    margin: 0 0 20px 0;
+
+    @media (min-width: $mq-576) {
+      max-width: 160px;
+    }
+
+    @media (min-width: $mq-768) {
+      max-width: 215px;
+      margin: 0 0 20px 20px;
+    }
+
+    @media (min-width: $mq-992) {
+      max-width: 227px;
+    }
+  }
+
+  &__bg-img {
+    max-width: 222px;
+    z-index: -1;
+    order: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (min-width: $mq-576) {
+      max-width: 260px;
+    }
+
+    @media (min-width: $mq-768) {
+      position: relative;
+      margin: 0 0 -20px 0;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    @media (min-width: $mq-992) {
+      max-width: 307px;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 0;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    font-style: normal;
+    height: auto;
+    white-space: nowrap;
+    transition: all 0.5s ease 0s;
+    color: white !important;
+    background-color: #C12982;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 11px 24px;
+    display: block;
+
+    @media (min-width: $mq-768) {
+      max-width: 200px;
+    }
+  }
+}

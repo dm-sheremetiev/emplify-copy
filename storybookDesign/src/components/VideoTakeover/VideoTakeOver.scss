@@ -1,0 +1,37 @@
+@import './src/assets/scss/variables/index';
+
+.video-takeover {
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    cursor: pointer;
+    box-shadow: 0 0 24px 0 rgba(0,0,0,0.5);
+    background-size: cover;
+
+    &:hover .video-takeover__button {
+      transform: scale(1.1);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -33px;
+    width: 66px;
+    height: 66px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    z-index: 2;
+
+    @media (min-width: $mq-768) {
+      width: 200px;
+      height: 200px;
+      margin: -100px;
+    }
+  }
+}

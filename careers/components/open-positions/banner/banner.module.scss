@@ -1,0 +1,36 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.wrapper {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.inner {
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-align: left;
+
+  @include md {
+    min-height: 248px;
+  }
+
+  @include lg {
+    min-height: 212px;
+  }
+}
+
+.headingBox {
+  padding: 48px 0;
+  @include xl {
+    padding: 64px 0 88px;
+  }
+}

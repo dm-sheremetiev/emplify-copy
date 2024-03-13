@@ -1,0 +1,200 @@
+.input {
+  border: 1px solid rgb(210, 214, 220);
+  background-color: rgb(255, 255, 255);
+  height: 48px;
+  font-weight: 400;
+  border-radius: 2px;
+  font-style: normal;
+  color: rgb(47, 55, 68);
+  width: 100%;
+  display: block;
+  appearance: none;
+  padding: 15px 10px 0;
+  font-size: 13px;
+  line-height: 16px;
+
+  &:focus {
+    border: 1px solid #a30c65;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: #535E70;
+    }
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #535E70;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #535E70;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #535E70;
+    }
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #535E70;
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
+
+  &[type='password']:focus ~ p {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  // Floating labels
+  &:-ms-input-placeholder {
+    padding: 15px 10px 0;
+  }
+
+  &[type='number']::-webkit-inner-spin-button,
+  &[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  &::-webkit-input-placeholder {
+    opacity: 0;
+    transition: all 0.2s;
+  }
+
+  &:-ms-input-placeholder {
+    opacity: 1;
+    transition: all 0.2s;
+  }
+
+  &:-ms-input-placeholder {
+    padding: 0 10px;
+  }
+
+  &::-ms-input-placeholder {
+    opacity: 1;
+    transition: all 0.2s;
+  }
+
+  &::placeholder {
+    opacity: 0;
+    transition: all 0.2s;
+  }
+
+  &:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
+  &:placeholder-shown:not(:focus):-ms-input-placeholder {
+    opacity: 0;
+  }
+
+  &:placeholder-shown:not(:focus)::-ms-input-placeholder {
+    opacity: 0;
+  }
+
+  &:placeholder-shown:not(:focus)::placeholder {
+    opacity: 0;
+  }
+
+  &:-ms-input-placeholder:not(:focus) {
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder + label {
+    opacity: 0;
+  }
+
+  &:-ms-input-placeholder:not(:focus) + label {
+    font-size: 13px;
+    top: 15px;
+    color: #454647;
+  }
+
+  &:placeholder-shown:not(:focus) + label {
+    font-size: 13px;
+    top: 15px;
+    color: #454647;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #a30c65;
+    padding: 15px 10px 0;
+  }
+
+  &:focus + label {
+    color: #a30c65;
+  }
+}
+
+.inputGroup {
+  text-align: left;
+  margin-bottom: 32px;
+  position: relative;
+  width: 100%;
+
+  label {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    cursor: text;
+    font-size: 12px;
+    line-height: 18px;
+    transition: all 0.2s;
+    pointer-events: none;
+    color: #7B8694;
+    margin-bottom: 0;
+  }
+
+  select {
+    width: 100%;
+    border: 1px solid rgb(210, 214, 220);
+    padding: 10px 32px 10px 10px;
+    height: 48px;
+    color: #2f3744;
+    font-size: 13px;
+    line-height: 16px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgOCA0Ij4KICA8ZGVmcz4KICAgIDxwb2x5Z29uIGlkPSJhcnJvdy1kb3duLTEyLWEiIHBvaW50cz0iMTAgMTAgNiAxNCAyIDEwIi8+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTEwKSI+CiAgICA8dXNlIGZpbGw9IiMyRjM3NDQiIGZpbGwtcnVsZT0ibm9uemVybyIgeGxpbms6aHJlZj0iI2Fycm93LWRvd24tMTItYSIvPgogIDwvZz4KPC9zdmc+Cg==) right 12px center no-repeat rgb(255, 255, 255);
+    appearance: none;
+    -webkit-appearance: none;
+  }
+}
+
+.error {
+  position: relative;
+
+  input,
+  select {
+    border: 1px solid #c6140a;
+
+    &:focus + label {
+      color: #c6140a;
+    }
+  }
+
+  span {
+    color: #c6140a;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-top: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,44 @@
+@page {
+  margin: 10mm;
+  size: A4 landscape;
+}
+
+@media all {
+  .pagebreak {
+    display: none;
+  }
+}
+
+@media print {
+  html,
+  body {
+    height: initial !important;
+    overflow: initial !important;
+    -webkit-print-color-adjust: exact;
+    border-radius: 0;
+  }
+
+  .pagebreak {
+    display: block;
+    margin-top: 1rem;
+    page-break-before: always;
+  }
+
+  #onetrust-consent-sdk {
+    display: none;
+  }
+
+  .emplifi-card--group--alt {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .emplifi-brands-logos__logos {
+    display: flex;
+    flex-wrap: wrap;
+
+    .emplifi-brand-logo {
+      width: 25%;
+    }
+  }
+}

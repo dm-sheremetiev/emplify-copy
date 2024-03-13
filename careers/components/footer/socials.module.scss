@@ -1,0 +1,65 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+$imagePathSocialIcons: '/img/components/social-bar/';
+
+.socials {
+  display: flex;
+  margin-bottom: 24px;
+
+  @include md {
+    margin-bottom: 30px;
+  }
+
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include md {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  a {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include md {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.fb {
+  background-image: url('../../assets/social/facebook-icon.svg');
+}
+
+.ig {
+  background-image: url('../../social/instagram-icon.svg');
+}
+
+.tw {
+  background-image: url('../../social/twitter-icon.svg');
+}
+
+.yt {
+  background-image: url('../../social/youtube-icon.svg');
+}
+
+.in {
+  background-image: url('../../social/linkedin-icon.svg');
+}

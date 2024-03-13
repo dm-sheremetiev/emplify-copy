@@ -1,0 +1,244 @@
+.mktoForm {
+  width: 100% !important;
+  max-width: 348px !important;
+  margin: 0 auto;
+}
+
+.mktoFormRow {
+  .mktoLabel {
+    width: 100% !important;
+    padding-top: 0px !important;
+    padding-bottom: 10px;
+    color: $abbey;
+    font-size: 13px;
+    line-height: 28px;
+    font-weight: 400 !important;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .mktoField {
+    padding: 0 10px 0 10px !important;
+    width: 100% !important;
+    height: 45px;
+    margin-top: 10px;
+    border: 1px solid $silver;
+  }
+
+  select {
+    padding: 0 10px 0 10px !important;
+    width: 100% !important;
+    height: 45px;
+    border: 1px solid $silver;
+    margin-top: 10px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgOCA0Ij4KICA8ZGVmcz4KICAgIDxwb2x5Z29uIGlkPSJhcnJvdy1kb3duLTEyLWEiIHBvaW50cz0iMTAgMTAgNiAxNCAyIDEwIi8+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTEwKSI+CiAgICA8dXNlIGZpbGw9IiMyRjM3NDQiIGZpbGwtcnVsZT0ibm9uemVybyIgeGxpbms6aHJlZj0iI2Fycm93LWRvd24tMTItYSIvPgogIDwvZz4KPC9zdmc+Cg==)
+      right 12px center no-repeat rgb(255, 255, 255);
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  textarea {
+    padding: 10px !important;
+    width: 100% !important;
+    height: 75px !important;
+    border: 1px solid $silver;
+    margin-top: 10px;
+  }
+
+  .mktoFormCol {
+    width: 100%;
+    margin-bottom: 25px;
+
+    .mktoFieldWrap {
+      .mktoHtmlText {
+        span {
+          font-size: 13px !important;
+        }
+
+        select#Country {
+          margin-top: 0px !important;
+        }
+      }
+    }
+  }
+
+  .mktoFieldWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .mktoHtmlText {
+    width: 100% !important;
+  }
+
+  .mktoHtmlText,
+  #LblConsent_To_Processing__c {
+    color: $doveGray;
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: 400 !important;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  label#LblConsent_To_Processing__c.mktoLabel {
+    width: 100% !important;
+    padding-left: 38px !important;
+    padding-bottom: 0px !important;
+  }
+
+  label#LblIs_Marketable__c {
+    padding-left: 5px !important;
+
+    span {
+      font-size: 13px !important;
+    }
+  }
+
+  input#LblConsent_To_Processing__c,
+  input[type='checkbox'] {
+    padding: 0px !important;
+    width: 20px !important;
+    margin-top: -13px !important;
+  }
+
+  input#LblConsent_To_Processing__c,
+  input[type='checkbox']:last-child {
+    padding: 0px !important;
+    width: 20px !important;
+    margin: 0px !important;
+  }
+}
+
+.mktoButtonRow {
+  width: 100% !important;
+
+  .mktoButtonWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0 !important;
+  }
+
+  .mktoButton {
+    margin-bottom: 30px !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    color: $white !important;
+    font-family: 'Poppins', sans-serif !important;
+    width: 100% !important;
+    height: 44px !important;
+    background-color: $mediumRedViolet !important;
+    background-image: none !important;
+    border: none !important;
+
+    &:hover {
+      background-color: $abbey;
+    }
+  }
+}
+
+.mktoForm.mktoLayoutAbove .mktoRadioList,
+.mktoForm.mktoLayoutAbove .mktoCheckboxList {
+  width: initial !important;
+  float: left !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+}
+
+.emplifi-market-alt-form {
+  .mktoForm {
+    width: 100%;
+    max-width: 100% !important;
+    padding: 25px;
+    background-color: $white !important;
+  }
+
+  input {
+    font-size: 20px !important;
+  }
+
+  .mktoForm input[type='url'],
+  .mktoForm input[type='text'],
+  .mktoForm input[type='date'],
+  .mktoForm input[type='tel'],
+  .mktoForm input[type='email'],
+  .mktoForm input[type='number'],
+  .mktoForm select.mktoField {
+    height: 1.7em !important;
+  }
+
+  .emplifi-market-form__dark {
+    form.mktoForm {
+      background-color: rgb(45, 45, 45) !important;
+
+      .mktoFormCol {
+        select {
+          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAABHNCSVQICAgIfAhkiAAAAIBJREFUKFNj/P///wUGBob/QOzIyMj4AUjjBUD1BkAF+4F4ISNUsz6QAzIErwFIGgWAaieCNIMYB4AYrwFoGhcCXZnACHIjIQOwaQTpA2vGZwAujSiacRhQCBRfD8Qgr4GdihyacJtxuAAmjKERw2YcBmDViFMzkhcSgE6dgCviAfXISyQVr5xBAAAAAElFTkSuQmCC)
+            right 12px center no-repeat #fff;
+
+          option {
+            color: black !important;
+            background-color: white !important;
+          }
+        }
+
+        select,
+        input {
+          color: #acb1b3 !important;
+          border: 1px solid #ddd;
+          background-color: rgba(#000000, 0.3) !important;
+
+          &::placeholder {
+            color: #acb1b3 !important;
+          }
+
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            -webkit-text-fill-color: #acb1b3 !important;
+            -webkit-box-shadow: 0 0 0 30px #111 inset !important;
+          }
+        }
+      }
+
+      span {
+        color: white !important;
+      }
+
+      a {
+        color: white !important;
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mktoFormRow {
+    label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .emplifi-market-alt-form {
+    .mktoForm input[type='url'],
+    .mktoForm input[type='text'],
+    .mktoForm input[type='date'],
+    .mktoForm input[type='tel'],
+    .mktoForm input[type='email'],
+    .mktoForm input[type='number'],
+    .mktoForm select.mktoField {
+      height: 45px !important;
+    }
+
+    .mktoForm select {
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgOCA0Ij4KICA8ZGVmcz4KICAgIDxwb2x5Z29uIGlkPSJhcnJvdy1kb3duLTEyLWEiIHBvaW50cz0iMTAgMTAgNiAxNCAyIDEwIi8+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTEwKSI+CiAgICA8dXNlIGZpbGw9IiMyRjM3NDQiIGZpbGwtcnVsZT0ibm9uemVybyIgeGxpbms6aHJlZj0iI2Fycm93LWRvd24tMTItYSIvPgogIDwvZz4KPC9zdmc+Cg==)
+        right 12px center no-repeat rgb(255, 255, 255);
+      appearance: none;
+      -webkit-appearance: none;
+    }
+  }
+}

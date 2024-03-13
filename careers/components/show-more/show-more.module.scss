@@ -1,0 +1,18 @@
+@import '../../styles/media-queries';
+
+.container {
+  position: relative;
+  display: flex;
+  padding-top: 49px;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+  width: 235px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include md {
+    padding-top: 70px;
+    width: 100%;
+  }
+}

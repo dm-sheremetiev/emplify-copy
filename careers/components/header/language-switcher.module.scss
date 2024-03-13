@@ -1,0 +1,118 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+@import '../../styles/media-queries';
+
+.lngSwitcher {
+  padding: 1.1875rem;
+
+  @include mainNavDesktop {
+    padding: 0;
+    margin-right: 16px;
+    margin-left: 32px;
+    position: relative;
+  }
+
+  &:hover {
+    background-color: #f0f0f0;
+    transition: background 0.15s linear;
+  }
+
+  > div {
+    display: inline-block;
+  }
+}
+
+.button {
+  cursor: pointer;
+  padding: 12px 24px 12px;
+  user-select: none;
+  background-image: none;
+  display: inline-block;
+  font-weight: 400;
+  @include fontSize(14, 14);
+  line-height: 1em;
+  text-align: center;
+  font-family: $fontFamilyPrimary;
+  text-decoration: none;
+  font-style: normal;
+  height: auto;
+  white-space: nowrap;
+  transition: all 0.5s;
+  border: 0.0625rem solid transparent;
+  color: #414142;
+  outline: none;
+  background-color: #cccccc;
+
+  &:after {
+    border-width: 0.0625rem;
+    border-color: #414142;
+    transform: translate(1.5em, -0.1rem) rotate(135deg);
+
+    @include mainNavDesktop {
+      border-width: 0.0625rem;
+      transform: translate(1em, -0.2rem) rotate(135deg);
+    }
+  }
+}
+
+.lngList {
+  box-shadow: 0 0.9375rem 0.9375rem #00000041;
+  display: none;
+
+  @include mainNavDesktop {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+  }
+}
+
+.isOpen {
+  display: block;
+}
+
+.lngLink {
+  @include fontSize(18, 18);
+  padding: 1.4375rem 1.375rem;
+  background-color: #fff;
+  display: block;
+  border-bottom: 0.0625rem solid #cccccc;
+  text-transform: uppercase;
+
+  &:link,
+  &:visited {
+    color: #a30c65;
+  }
+
+  &:hover {
+    background-color: #f0f0f0;
+    transition: background 0.15s linear;
+  }
+}
+
+.isActive {
+  background-color: $jazzberryJam;
+
+  &:link,
+  &:visited,
+  &:hover {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #a30c65;
+    transition: background 0.15s linear;
+  }
+}
+
+.isClicked {
+  background-color: #fff;
+  border-color: #cccccc;
+
+  &:after {
+    transform: translate(1.5em, -0.1rem) rotate(-45deg);
+
+    @include mainNavDesktop {
+      transform: translate(1em, -0.2rem) rotate(-45deg);
+    }
+  }
+}

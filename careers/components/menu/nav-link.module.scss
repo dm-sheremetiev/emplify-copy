@@ -1,0 +1,96 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 26px 20px 24px;
+  cursor: pointer;
+  text-decoration: none;
+  @include fontSize(16, 24);
+  font-weight: 500;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  font-family: $fontFamilyPrimary;
+  width: 100%;
+
+  @include mainNavDesktop {
+    padding: 0 19px;
+    height: 100%;
+  }
+
+  &,
+  &:visited {
+    color: $rhino100;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $darkTeal;
+  }
+}
+
+.active {
+  &,
+  &:visited {
+    @include mainNavDesktop {
+      position: relative;
+      color: $teal;
+    }
+  }
+}
+
+.activeHasSubmenu {
+  composes: active;
+
+  &::before {
+    @include mainNavDesktop {
+      width: calc(100% - 54px);
+    }
+  }
+}
+
+.navLinkSecondary {
+  font-weight: normal;
+  padding-top: 4px;
+
+  &,
+  &:visited {
+    color: $rhino80;
+  }
+
+  @include mainNavDesktop {
+    padding: 0;
+    width: auto;
+    border-bottom: 1px solid transparent;
+    position: relative;
+  }
+
+  &:hover {
+    color: $teal;
+
+    @include mainNavDesktop {
+      border-bottom: 1px solid $teal;
+    }
+  }
+}
+
+.hasFlag {
+  @include mainNavDesktop {
+    position: relative;
+  }
+
+  span {
+    @include mainNavDesktop {
+      transform: translate(-7px, -18px);
+      right: 0;
+    }
+  }
+}

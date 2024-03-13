@@ -1,0 +1,94 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.arrow {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid $teal;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+
+  @include md {
+    width: 33px;
+    height: 33px;
+    margin-left: 13px;
+  }
+
+  @include lg {
+    width: 34px;
+    height: 34px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    box-sizing: content-box;
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid $teal;
+    border-right: 2px solid $teal;
+    transform: translate(-50%, -50%) rotate(45deg);
+    left: 50%;
+    top: 43%;
+
+    @include md {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+  background-color: $teal;
+
+  &::after {
+    border-color: #fff;
+  }
+}
+
+.location {
+  color: $teal;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  // button reset
+  border-width: 0;
+  border-bottom: 1px solid rgba(73, 199, 237, 0.6);
+  font: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-color: transparent;
+  @include fontSize(30, 42);
+  font-weight: 500;
+  position: relative;
+  top: 2px;
+
+  &:hover {
+    .arrow {
+      background-color: $teal;
+
+      &::after {
+        border-color: #fff;
+      }
+    }
+  }
+
+  @include md {
+    @include fontSize(42, 60);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,57 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.list {
+  position: relative;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 542px;
+
+  @include md {
+    display: block;
+    position: relative;
+    width: 100vw;
+    max-width: none;
+    min-height: 398px;
+    background: url('map-xl.svg') no-repeat center center;
+    background-size: 756px 400px;
+    margin-bottom: 64px;
+    margin-top: -32px;
+  }
+
+  @include lg {
+    min-height: 530px;
+    background-size: 1020px 530px;
+    margin-top: -108px;
+    margin-bottom: 101px;
+  }
+
+  @include xl {
+    min-height: 670px;
+    background-size: 1277px auto;
+    margin-top: -129px;
+    margin-bottom: 148px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background-color: $brandSkyLighter;
+    z-index: -1;
+    left: auto;
+    right: 0;
+    transform: translate(16px, -16px);
+
+    @include md {
+      display: none;
+    }
+  }
+}

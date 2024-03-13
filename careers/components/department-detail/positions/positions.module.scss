@@ -1,0 +1,9 @@
+@import '@/careers/styles/media-queries';
+
+.tiles {
+  margin-bottom: 20px;
+
+  @include md {
+    margin-bottom: 96px;
+  }
+}

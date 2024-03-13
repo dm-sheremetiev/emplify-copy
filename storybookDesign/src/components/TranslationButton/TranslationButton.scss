@@ -1,0 +1,90 @@
+@import './src/assets/scss/variables/index';
+@import '../../assets/scss/fonts';
+
+.emplifi-translation-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10.5px 15px;
+  border: 1px solid $silver;
+
+  &,
+  &[type='button'] {
+    background-color: $white;
+  }
+
+  &--is-active {
+    background-color: $jazzberryJam;
+    border: 1px solid $jazzberryJam;
+
+    .emplifi-translation-button__text.typography.typography--Headline4 {
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $abbey;
+      border: 1px solid $abbey;
+    }
+  }
+
+  &__text.typography.typography--Headline4 {
+    color: $shipGray;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Lato', sans-serif, sans-serif;
+  }
+
+  .emplifi-icon {
+    margin-left: 10px;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: $shipGray;
+    border: 1px solid $shipGray;
+    transform: none;
+
+    .emplifi-translation-button__text.typography.typography--Headline4 {
+      color: $white;
+    }
+  }
+}
+
+.emplifi-translation-button-group {
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+}
+
+@media screen and (min-width: 992px) {
+  .emplifi-translation-button {
+    justify-content: flex-start;
+    width: 176px;
+    padding: 14px 23px;
+
+    .emplifi-icon {
+      display: none !important;
+    }
+
+    &__text.typography.typography--Headline4 {
+      color: $shipGray;
+      font-size: 20px;
+      line-height: 34px;
+    }
+  }
+
+  .emplifi-translation-button-group {
+    position: absolute;
+    z-index: 9999;
+    top: 50px;
+    right: -3px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .emplifi-translation-button-group {
+    top: 50px;
+    right: -94px;
+  }
+}

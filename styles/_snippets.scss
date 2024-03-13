@@ -1,0 +1,56 @@
+.float-image-left {
+  margin-bottom: 15px;
+
+  br {
+    display: none;
+  }
+
+  img {
+    float: left;
+    padding-right: 15px;
+  }
+}
+
+.float-image-right {
+  margin-bottom: 15px;
+
+  br {
+    display: none;
+  }
+
+  img {
+    float: right;
+    padding-left: 15px;
+  }
+}
+
+.center {
+  * {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.right-align-image {
+  img {
+    margin-left: auto;
+  }
+}
+
+.indent-block {
+  br {
+    display: none;
+  }
+
+  padding-left: 45px;
+}
+
+.indent-block-alt {
+  br {
+    display: none;
+  }
+
+  padding-right: 45px;
+}

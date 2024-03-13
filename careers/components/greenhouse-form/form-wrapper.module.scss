@@ -1,0 +1,31 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+@import '../../styles/media-queries';
+
+.formWrapper {
+  position: relative;
+  margin-bottom: 48px;
+  scroll-margin-top: $headerHeight;
+
+  @include md {
+    margin-bottom: 145px;
+  }
+
+  @include lg {
+    max-width: 616px;
+  }
+
+  @include xl {
+    max-width: 652px;
+  }
+
+  @include mainNavDesktop {
+    scroll-margin-top: $headerHeightDesktop;
+  }
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}

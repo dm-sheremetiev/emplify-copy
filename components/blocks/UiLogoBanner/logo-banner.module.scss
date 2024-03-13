@@ -1,0 +1,75 @@
+.logoBanner {
+  background-color: #fff;
+  padding: 64px 15px;
+}
+
+.logoSection {
+  padding: 64px 0;
+  min-height: 400px;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.titleWrapper {
+  margin-bottom: 32px;
+
+  &.wider {
+    margin-bottom: 24px;
+    padding: 0 16px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 64px;
+      padding: 0;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #15395A;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      font-size: 36px;
+      line-height: 48px;
+      max-width: 800px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 1000px;
+    }
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(112px, 112px));
+  gap: 32px;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 170px));
+  }
+
+  li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 112px;
+    height: 112px;
+    flex-grow: 0;
+    border-radius: 3px;
+
+    @media (min-width: 768px) {
+      flex-basis: 170px;
+      height: 140px;
+    }
+  }
+}

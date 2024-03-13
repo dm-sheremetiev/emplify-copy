@@ -1,0 +1,77 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-bottom: 32px;
+  width: 100%;
+
+  @include md {
+    flex-direction: row;
+    margin-bottom: 48px;
+  }
+
+  @include lg {
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+
+  @include xl {
+    position: relative;
+  }
+}
+
+.row {
+  @include lg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  dt {
+    @include lg {
+      flex: 0 0 130px;
+      margin-right: 20px;
+      transform: translateY(7px);
+    }
+  }
+
+  dd {
+    color: $rhino80;
+  }
+
+  &:not(:last-of-type) {
+    .dotSeparator {
+      @include md {
+        margin-right: 32px;
+        position: relative;
+      }
+
+      @include lg {
+        margin-right: 0;
+      }
+
+      &:after {
+        @include md {
+          position: absolute;
+          content: '';
+          top: 50%;
+          right: -16px;
+          transform: translate(50%, -50%);
+          width: 2px;
+          height: 2px;
+          border-radius: 50%;
+          background-color: $rhino80;
+        }
+
+        @include lg {
+          display: none;
+        }
+      }
+    }
+  }
+}

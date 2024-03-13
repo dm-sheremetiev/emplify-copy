@@ -1,0 +1,80 @@
+{
+  "button": "See {{positionsCount}} Open Positions",
+  "map": "Wherever you’re from, come and take your place on the Emplifi team.",
+  "morePositionsButton": "Show {{hiddenPositionsCount}} more positions",
+  "nav": {
+    "title": "Careers",
+    "openPositions": "Open Positions",
+    "departments": "Departments",
+    "lifeAtEmplifi": "Life at Emplifi",
+    "selectLng": "Select Language"
+  },
+  "footer": {
+    "privacy": "Privacy Statement",
+    "moreAboutUs": "More About Us"
+  },
+  "numbers": {
+    "founded": "Founded",
+    "employees": "Employees",
+    "nationalities": "Nationalities"
+  },
+  "jobDetail": {
+    "meta": {
+      "description": "{{title}} job in {{location}}",
+      "ogTitle": "{{title}} job at Emplifi",
+      "ogDescription": "Every great decision always starts with a small first step. Apply now for a {{title}} job in {{location}}"
+    },
+    "position": "position",
+    "department": "department",
+    "location": "location",
+    "metadata": {
+      "name": {
+        "Employment Type": "Employment Type",
+        "Full-time": "Full-time"
+      }
+    },
+    "button": "Apply Now!"
+  },
+  "openPositions": {
+    "meta": {
+      "current": {
+        "title": "Open Positions - Job Opportunities in {{locationName}}",
+        "description": "Interested in a job opportunity at Emplifi? Browse our open positions in {{locationFullName}}. Your new job is just a click away.",
+        "og": {
+          "title": "Browse Jobs at Emplifi in {{locationFullName}}!",
+          "description": "Interested in a job opportunity at Emplifi? Browse our open positions in {{locationFullName}}. Your new job is just a click away!"
+        },
+        "twitterShare": "Interested in a job opportunity @Emplifi? See our open positions in {{locationFullName}}, right now!"
+      },
+      "title": "Open Positions - Job Opportunities and Internship",
+      "description": "See which exciting positions we have for you at Emplifi. Browse all job opportunities and internships in IT, Sales, Marketing and more. Start now!",
+      "og": {
+        "title": "Uncover Your Next Job Opportunity or Internship | Emplifi",
+        "description": "See which exciting positions we have for you at Emplifi. Browse all job opportunities and internships in Development, Marketing, Sales and more."
+      },
+      "twitterShare": "Browse all @Emplifi job opportunities and internships in Development, Marketing, Sales and more!"
+    },
+    "title": "It’s time. Let’s find you a perfect role in",
+    "noPositionsTitle": "Oops, There Aren’t Any Open Positions in",
+    "noWorries": "Hey, No Worries!",
+    "noPositionsDescription": "Feel confident that we should review your resume regardless? Submit it below and we’ll get back to you if we think there may be a fit for you.",
+    "anyLocation": "any location",
+    "allLocations": "All Locations"
+  },
+  "departments": {
+    "allRoles": "Any of these {{departmentName}} roles feel like a good fit?",
+    "allRolesFilled": "All {{departmentName}} Positions Are Currently Filled",
+    "ourWork": "Get to Know Our Work",
+    "getToKnowUs": "Get to Know Us Even Further"
+  },
+  "jobSearch": {
+    "search": "Search",
+    "noResult": "Currently, there are no open roles matching your search criteria.",
+    "filterNameLabel": "Search jobs by keyword",
+    "filterNamePlaceholder": "e.g. engineer, NYC",
+    "filterDepartmentLabel": "Departments",
+    "filterDepartmentPlaceholder": "All Departments",
+    "filterLocationLabel": "Location",
+    "filterLocationPlaceholder": "All Locations"
+  }
+}

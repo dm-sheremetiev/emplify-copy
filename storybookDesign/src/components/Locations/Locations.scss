@@ -1,0 +1,67 @@
+@import './src/assets/scss/variables/index';
+
+.locations {
+  &__inner {
+    text-align: center;
+    max-width: 1280px;
+    padding: 75px 35px;
+    margin: 0 auto;
+
+    @media (min-width: $mq-1440) {
+      padding: 75px 0;
+    }
+
+    h2 {
+      text-align: left;
+      color: $abbey;
+      letter-spacing: 5.4px;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 32px;
+    justify-content: space-between;
+
+    @media (min-width: $mq-768) {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 24px;
+    }
+
+    @media (min-width: $mq-992) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row-gap: 97px;
+    }
+  }
+
+  &-item {
+    text-align: left;
+
+    h3 {
+      color: $astronautBlue;
+      position: relative;
+      margin-bottom: 56px;
+
+      &:after {
+        position: absolute;
+        content: '';
+        bottom: -20px;
+        left: 0;
+        background-color: $seagull;
+        width: 50px;
+        height: 9px;
+      }
+    }
+
+    &__text-wrapper {
+      max-width: 280px;
+      color: $astronautBlue;
+    }
+  }
+}

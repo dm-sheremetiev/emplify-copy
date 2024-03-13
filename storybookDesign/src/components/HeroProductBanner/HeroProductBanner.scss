@@ -1,0 +1,119 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-product-hero-banner {
+	width: 100%;
+	background-color: $white;
+	// padding: 35px 35px 75px 35px;
+	padding: 35px;
+
+	.emplifi-product-hero-banner-content {
+		&__image-area {
+			img {
+				max-width: 100% !important;
+				width: 100%;
+			}
+		}
+		&__text-area {
+			text-align: left;
+			margin-top: 40px;
+			.emplifi-product-hero-banner-content {
+				&__title {
+					color: $astronautBlue;
+					font-size: 28px;
+					line-height: 36px;
+					font-family: 'Poppins', sans-serif,
+						sans-serif !important;
+					font-weight: 600;
+				}
+				&__body {
+					margin-top: 25px;
+					// margin-bottom: 50px;
+					color: $doveGray;
+					font-size: 14px;
+					line-height: 24px;
+					font-family: 'Lato', sans-serif;
+					font-weight: 400;
+				}
+			}
+
+			.emplifi-button {
+				margin-top: 50px;
+			}
+		}
+		&--left,
+		&--right {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.emplifi-product-hero-banner {
+		height: 100%;
+		padding: 5% !important;
+		margin: 0 auto;
+
+		.emplifi-product-hero-banner__container {
+			display: flex;
+			margin: 0 auto;
+			max-width: 992px;
+		}
+		.emplifi-product-hero-banner-content {
+			&__image-area {
+				width: 60%;
+			}
+			// note: typography font should be added later
+			&__text-area {
+				width: 40%;
+				max-width: 400px;
+				margin-top: 0;
+				text-align: left;
+				.emplifi-product-hero-banner-content {
+					&__title {
+						font-size: 36px;
+						line-height: 46px;
+					}
+					&__body {
+						font-size: 16px;
+						margin-right: 20px;
+						margin-top: 25px;
+					}
+				}
+			}
+			&--right {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				.emplifi-product-hero-banner-content {
+					&__text-area {
+						margin-right: 20px;
+						margin: 0 0 0 auto !important;
+					}
+					&__image-area {
+						img {
+							margin: 0 0 0 auto !important;
+						}
+					}
+				}
+			}
+			&--left {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row-reverse;
+				align-items: center;
+				.emplifi-product-hero-banner-content {
+					&__text-area {
+						margin-left: 20px;
+					}
+					&__image-area {
+						img {
+							margin: 0 auto 0 0 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

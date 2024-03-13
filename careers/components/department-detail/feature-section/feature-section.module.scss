@@ -1,0 +1,55 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+
+  @include md {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 96px;
+  }
+
+  picture {
+    @include md {
+      max-width: 50%;
+    }
+    @include xl {
+      max-width: 70%;
+    }
+  }
+
+  p {
+    margin-bottom: 48px;
+    z-index: 1;
+
+    @include md {
+      max-width: 340px;
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      max-width: 375px;
+      @include fontSize(18, 30);
+    }
+
+    @include xl {
+      max-width: 510px;
+      @include fontSize(20, 30);
+    }
+  }
+}
+
+.reverse {
+  @include md {
+    flex-direction: row;
+  }
+
+  picture {
+    position: relative;
+  }
+}

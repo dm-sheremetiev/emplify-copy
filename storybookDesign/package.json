@@ -1,0 +1,118 @@
+{
+  "name": "emplifi",
+  "version": "0.1.0",
+  "private": true,
+  "main": "../storybookBuild/index.js",
+  "module": "../storybookBuild/index.es.js",
+  "types": "../storybookBuild/index.d.ts",
+  "files": [
+    "../storybookBuild"
+  ],
+  "engines": {
+    "node": ">=20",
+    "npm": ">=7",
+    "yarn": "use npm"
+  },
+  "scripts": {
+    "start": "npm run storybook",
+    "build": "npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwind-final.scss && rollup -c --bundleConfigAsCjs",
+    "start-tailwind": "craco start",
+    "build-tailwind": "craco build",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook",
+    "deploy-netlify": "npm run build-storybook && netlify deploy --prod --dir=storybook-static",
+    "build-test": "npm run build && npm run build-storybook"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@craco/craco": "7.1.0",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "@types/jest": "29.5.0",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.34",
+    "@types/react-dom": "18.0.11",
+    "gsap": "3.11.5",
+    "node": "20.10.0",
+    "postcss-minify": "1.1.0",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-gsap": "3.2.1",
+    "react-modal-video": "2.0.0",
+    "react-scripts": "5.0.1",
+    "react-svg-unique-id": "1.3.3",
+    "typescript": "4.9.5",
+    "web-vitals": "3.3.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "5.0.0",
+    "@rollup/plugin-json": "6.0.0",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "@storybook/addon-actions": "6.5.16",
+    "@storybook/addon-controls": "6.5.16",
+    "@storybook/addon-essentials": "6.5.16",
+    "@storybook/addon-knobs": "6.4.0",
+    "@storybook/addon-links": "6.5.16",
+    "@storybook/addon-postcss": "2.0.0",
+    "@storybook/builder-webpack5": "6.5.16",
+    "@storybook/manager-webpack5": "6.5.16",
+    "@storybook/node-logger": "6.5.16",
+    "@storybook/preset-create-react-app": "4.1.2",
+    "@storybook/react": "6.5.16",
+    "@svgr/rollup": "6.5.1",
+    "@types/react-modal-video": "1.2.0",
+    "autoprefixer": "10.4.13",
+    "postcss": "8.4.21",
+    "postcss-flexbugs-fixes": "5.0.2",
+    "postcss-import": "15.1.0",
+    "postcss-preset-env": "8.0.1",
+    "precss": "4.0.0",
+    "react-is": "18.2.0",
+    "replace-in-file": "6.3.5",
+    "rollup": "3.20.2",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-copy": "3.4.0",
+    "rollup-plugin-copy-assets": "2.0.3",
+    "rollup-plugin-delete": "2.0.0",
+    "rollup-plugin-img": "1.1.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-postcss": "4.0.2",
+    "rollup-plugin-progress": "1.1.2",
+    "rollup-plugin-sass": "1.12.19",
+    "rollup-plugin-scss": "4.0.0",
+    "rollup-plugin-svg-import": "2.0.0",
+    "rollup-plugin-typescript2": "0.34.1",
+    "sass": "1.62.0",
+    "tailwindcss": "3.3.1",
+    "webpack": "5.78.0"
+  }
+}

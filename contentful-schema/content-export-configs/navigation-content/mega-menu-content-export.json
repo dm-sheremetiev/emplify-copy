@@ -1,0 +1,94 @@
+{
+  "tags": [
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "cpumif18y1gd"
+          }
+        },
+        "id": "3rNu3Ws7eThH0mjPKLwoSv",
+        "type": "Entry",
+        "createdAt": "2022-02-08T03:39:20.815Z",
+        "updatedAt": "2022-02-10T05:57:15.935Z",
+        "environment": {
+          "sys": {
+            "id": "moga-dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "02l9svmFpQY2AnM8pUrMUr"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "uiMegaMenu"
+          }
+        }
+      },
+      "fields": {
+        "internalName": {
+          "en": "New Mega Menu"
+        },
+        "subMenus": {
+          "en": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "30VGCDZMBpndKQ0LSlS9MH"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6GQj3Oc3v4A6iJwYUG6Ugl"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1xtcn9PJ34XTajqzmQTMmj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6ARNDmzou5Q1nQ07507XmU"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "assets": [
+  ]
+}

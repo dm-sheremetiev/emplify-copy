@@ -1,0 +1,57 @@
+@import './src/assets/scss/variables/index';
+@import "../../assets/scss/fonts.scss";
+
+.emplifi-article-area-btm-img {
+	display: flex;
+
+	&__container {
+		max-width: 992px;
+		margin: 0 auto;
+		.typography--Headline3 {
+			color: $biscay;
+			margin-bottom: 30px;
+		}
+	}
+	&__image-container {
+		float: right;
+		height: 100%;
+		margin-left: 95px;
+		display: flex;
+		align-items: flex-end;
+		shape-outside: inset(calc(100% - 340px) 0 0);
+		&--mobile {
+			display: none;
+		}
+	}
+
+	.emplifi-article-renderer {
+		padding: 0;
+		max-width: initial;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.emplifi-article-area-btm-img {
+		display: flex;
+		flex-direction: column-reverse;
+		&__image-container {
+			float: none;
+			align-items: center;
+			shape-outside: none;
+			margin-left: unset;
+			&--desktop {
+				display: none;
+			}
+			&--mobile {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		&__text-area {
+			margin: 50px 0px 85px 0px;
+			.typography--Headline3 {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}

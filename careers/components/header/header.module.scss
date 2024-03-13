@@ -1,0 +1,102 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.header {
+  height: $headerHeight;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding-left: 24px;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+
+  @include mainNavDesktop {
+    height: $headerHeightDesktop;
+    padding-left: 0;
+  }
+}
+
+.headerWrapper {
+  height: $headerHeight;
+}
+
+.headerContainer {
+  display: flex;
+  height: 100%;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  min-width: 120px;
+  width: 120px;
+
+  @include xl {
+    min-width: 150px;
+    width: 150px;
+  }
+}
+
+.title {
+  display: inline-block;
+  @include fontSize(13, 13);
+  color: $rhino100;
+  position: relative;
+  margin-left: 24px;
+
+  @include mainNavDesktop {
+    @include fontSize(16, 24);
+  }
+
+  &:before {
+    display: block;
+    content: '';
+    height: 25px;
+    width: 1px;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $teal;
+  }
+}
+
+.isFloating {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 8px 24px 0;
+}
+
+.bodyIsLockedMobile {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+  @include mainNavDesktop {
+    overflow: auto;
+    height: auto;
+    width: auto;
+  }
+
+  body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+    @include mainNavDesktop {
+      overflow: auto;
+      height: auto;
+      width: auto;
+    }
+  }
+}

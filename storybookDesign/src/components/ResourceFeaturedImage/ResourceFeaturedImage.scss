@@ -1,0 +1,49 @@
+@import './src/assets/scss/variables/index';
+
+.emplifi-resource-featured-image {
+	position: relative;
+	width: 100%;
+
+	&__featured {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 2.5px 18px;
+		background-color: $wildSand;
+
+		.typography.typography--ResourceParagraph {
+			color: $astronautBlue;
+		}
+	}
+
+	&__image-container {
+		max-height: 320px;
+		overflow: hidden;
+	}
+
+	&__image {
+		width: 100%;
+		object-fit: cover;
+
+		&--desktop {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.emplifi-resource-featured-image {
+		&__image-container {
+			max-height: unset;
+		}
+		&__image {
+			width: 100%;
+			&--mobile {
+				display: none;
+			}
+			&--desktop {
+				display: initial;
+			}
+		}
+	}
+}

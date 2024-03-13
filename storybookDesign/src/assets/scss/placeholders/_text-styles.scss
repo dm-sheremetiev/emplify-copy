@@ -1,0 +1,40 @@
+%text-style-h1 {
+	font-size: 28px;
+  font-family: $font-family-primary;
+	font-weight: $font-weight-bold;
+	line-height: calc(1ex / 0.47);
+	@media (min-width: $mq-768) {
+		font-size: 46px;
+	}
+}
+%text-style-h2 {
+	font-size: 24px;
+  font-family: $font-family-primary;
+	font-weight: $font-weight-bold;
+	line-height: calc(1ex / 0.42);
+	@media (min-width: $mq-768) {
+		font-size: 36px;
+	}
+}
+%text-style-h3 {
+  font-family: $font-family-primary;
+	font-size: 22px;
+	line-height: calc(1ex / 0.42);
+	@media (min-width: $mq-768) {
+		font-size: 24px;
+	}
+}
+%text-style-h4 {
+  font-family: $font-family-primary;
+	font-size: 20px;
+	line-height: calc(1ex / 0.42);
+}
+%text-style-h5 {
+  font-family: $font-family-primary;
+	font-size: 18px;
+	line-height: calc(1ex / 0.42);
+}
+%text-style-paragraph {
+	font-size: 18px;
+	line-height: calc(1ex / 0.42);
+}

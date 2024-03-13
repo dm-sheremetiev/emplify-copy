@@ -1,0 +1,65 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.link {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  @include fontSize(13, 20);
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 2px;
+  transition: $defaultTransition;
+  position: relative;
+
+  @include md {
+    color: $rhino100;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0;
+    position: relative;
+    margin-bottom: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @include xl {
+    @include fontSize(16, 26);
+  }
+
+  &:after {
+    position: absolute;
+    right: 19px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-135deg);
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid $rhino40;
+    border-bottom: 2px solid $rhino40;
+    transition: $defaultTransition;
+
+    @include md {
+      display: none;
+    }
+  }
+}
+
+.content {
+  @include fontSize(11, 18);
+  color: $rhino80;
+  font-weight: normal;
+
+  @include md {
+    display: none;
+  }
+}
+
+.copy {
+  @include md {
+    display: none;
+  }
+}

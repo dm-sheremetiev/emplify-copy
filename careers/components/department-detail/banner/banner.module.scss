@@ -1,0 +1,57 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/media-queries';
+
+.wrapper {
+  padding-top: 48px;
+  position: relative;
+  background-color: white;
+
+  @include md {
+    padding-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  h1 {
+    padding-bottom: 24px;
+  }
+
+  p {
+    padding-bottom: 48px;
+    position: relative;
+    z-index: 1;
+
+    @include md {
+      @include fontSize(18, 30);
+    }
+
+    @include xl {
+      @include fontSize(22, 34);
+      width: 558px;
+    }
+  }
+}
+
+.text {
+  @include md {
+    max-width: 344px;
+  }
+
+  @include lg {
+    max-width: 375px;
+  }
+
+  @include xl {
+    max-width: 558px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include md {
+    min-height: 302px;
+    flex-direction: row;
+  }
+}

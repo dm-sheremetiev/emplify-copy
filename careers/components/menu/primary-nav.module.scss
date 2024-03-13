@@ -1,0 +1,55 @@
+@import '@/careers/styles/mixins';
+@import '@/careers/styles/variables';
+@import '@/careers/styles/media-queries';
+
+.primaryNav {
+  height: 100%;
+
+  @include mainNavDesktop {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  > li {
+    border-top: 1px solid $rhino10;
+
+    @include mainNavDesktop {
+      border-top: 0;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.isOpen {
+  display: flex;
+}
+
+.hasSubmenu {
+  @include mainNavDesktop {
+    position: relative;
+  }
+
+  &:hover,
+  &:focus-within {
+    .navLink {
+      color: $darkTeal;
+    }
+
+    @include mainNavDesktop {
+      ul {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+}

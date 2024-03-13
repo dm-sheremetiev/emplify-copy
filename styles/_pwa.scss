@@ -1,0 +1,5 @@
+@for $i from 1 through 2 {
+  .card-in:nth-child(#{$i}) {
+    @include animation(slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) #{$i / 10}s backwards);
+  }
+}

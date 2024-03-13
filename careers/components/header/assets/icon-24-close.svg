@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>icon-24-close</title>
+    <desc>Created with Sketch.</desc>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(12 12) rotate(-45) translate(-11 -11)" fill="#2F3744">
+            <rect id="a" x="-2.2737e-13" y="10" width="22" height="2"/>
+            <rect transform="translate(11 11) rotate(-90) translate(-11 -11)" y="10" width="22" height="2"/>
+        </g>
+    </g>
+</svg>
