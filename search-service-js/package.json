@@ -4,7 +4,7 @@
   "description": "Emplifi search service for indexing and search",
   "main": "index.js",
   "engines": {
-    "node": ">= 16.5.0"
+    "node": "18.x"
   },
   "scripts": {
     "start": "concurrently \"npx tsc --watch\" \"nodemon -q build/index.js\"",
